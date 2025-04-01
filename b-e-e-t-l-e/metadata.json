@@ -1,0 +1,42 @@
+{
+    "game_id": 880570,
+    "title": "b-e-e-t-l-e",
+    "url": "https://loafyco.itch.io/b-e-e-t-l-e",
+    "cover_url": "https://img.itch.zone/aW1nLzQ5NTc0OTQucG5n/original/36s2FY.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvODgwNTcwLzQ5NTcwMDAucG5n/original/FZlNab.png",
+        "https://img.itch.zone/aW1hZ2UvODgwNTcwLzQ5NTcwMDMucG5n/original/RgBexe.png",
+        "https://img.itch.zone/aW1hZ2UvODgwNTcwLzQ5NTcwMDEucG5n/original/kG0NcA.png",
+        "https://img.itch.zone/aW1hZ2UvODgwNTcwLzQ5NTcwMDIucG5n/original/DeU7SO.png"
+    ],
+    "description": "A relaxing typing game",
+    "author": "Multiple authors",
+    "author_url": "https://loafyco.itch.io",
+    "extra": {
+        "status": "Prototype",
+        "platforms": [
+            "HTML5"
+        ],
+        "authors": {
+            "loafy co.": "https://loafyco.itch.io",
+            "smuckerz": "https://smuckerz.itch.io"
+        },
+        "genre": {
+            "Puzzle": "https://itch.io/games/genre-puzzle"
+        },
+        "tags": {
+            "Cute": "https://itch.io/games/tag-cute",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Relaxing": "https://itch.io/games/tag-relaxing",
+            "Typing": "https://itch.io/games/tag-typing",
+            "Walking simulator": "https://itch.io/games/tag-walking-simulator"
+        },
+        "length": "A few minutes"
+    },
+    "rating": {
+        "average": 4.8,
+        "votes": 1653
+    },
+    "errors": [],
+    "external_downloads": []
+}

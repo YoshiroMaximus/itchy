@@ -1,0 +1,46 @@
+{
+    "game_id": 3289244,
+    "title": "Switchblade",
+    "url": "https://rubic.itch.io/switchblade",
+    "cover_url": "https://img.itch.zone/aW1nLzE5NjM0NTcyLnBuZw==/original/7jiPc8.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMzI4OTI0NC8xOTYzMjg4OS5naWY=/original/2MUg2V.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI4OTI0NC8xOTYzMjg5MS5naWY=/original/IipwVw.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI4OTI0NC8xOTYzMjg5Mi5naWY=/original/fAZ74N.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI4OTI0NC8xOTYzMjg5MC5naWY=/original/Uplmaj.gif"
+    ],
+    "description": "A \"Getting Over It\"-style platformer adventure game where you play as a weapon.",
+    "author": "Multiple authors",
+    "author_url": "https://rubic.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "authors": {
+            "rubic": "https://rubic.itch.io",
+            "torcado": "https://torcado.itch.io",
+            "ShyCryptid": "https://shycryptid.itch.io",
+            "Camelot": "https://cameracore.itch.io",
+            "keestak": "https://keestak.itch.io"
+        },
+        "genre": {
+            "Platformer": "https://itch.io/games/genre-platformer"
+        },
+        "tools": {
+            "Godot": "https://itch.io/games/made-with-godot"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Metroidvania": "https://itch.io/games/tag-metroidvania",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer"
+        }
+    },
+    "rating": {
+        "average": 4.5,
+        "votes": 61
+    },
+    "errors": [],
+    "external_downloads": []
+}

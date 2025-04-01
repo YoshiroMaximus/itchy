@@ -1,0 +1,59 @@
+{
+    "game_id": 461639,
+    "title": "Kraft & Slash",
+    "url": "https://purejamgames.itch.io/kraft-slash",
+    "cover_url": "https://img.itch.zone/aW1nLzIzNTk5MzkuZ2lm/original/FI4QUq.gif",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvNDYxNjM5LzQyODEwODcucG5n/original/uCYd%2B%2F.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxNjM5LzQyODEwOTEucG5n/original/LAi3Sy.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxNjM5LzQyODEwOTAucG5n/original/KCAkQO.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxNjM5LzQyODEwODgucG5n/original/yv1UWJ.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxNjM5LzQyODEwODkucG5n/original/3H2QEI.png"
+    ],
+    "description": "Craft your weapon and fight!",
+    "author": "Multiple authors",
+    "author_url": "https://purejamgames.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "authors": {
+            "Pure Jam Games": "https://purejamgames.itch.io",
+            "Kotocca": "https://kotocca.itch.io",
+            "A Good Wobble": "https://agoodwobble.itch.io"
+        },
+        "genre": {
+            "Adventure": "https://itch.io/games/genre-adventure"
+        },
+        "tools": {
+            "Unity": "https://itch.io/games/made-with-unity",
+            "Adobe Photoshop": "https://itch.io/games/made-with-photoshop"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Casual": "https://itch.io/games/tag-casual",
+            "Crafting": "https://itch.io/games/tag-crafting",
+            "Cute": "https://itch.io/games/tag-cute",
+            "Fantasy": "https://itch.io/games/tag-fantasy",
+            "Roguelike": "https://itch.io/games/tag-roguelike",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Top-Down": "https://itch.io/games/tag-top-down",
+            "Unity": "https://itch.io/games/tag-unity"
+        },
+        "length": "A few minutes",
+        "inputs": {
+            "Mouse": "https://itch.io/games/input-mouse",
+            "Smartphone": "https://itch.io/games/input-phone"
+        }
+    },
+    "rating": {
+        "average": 4.4,
+        "votes": 587
+    },
+    "errors": [],
+    "external_downloads": []
+}

@@ -1,0 +1,50 @@
+{
+    "game_id": 92115,
+    "title": "We Become What We Behold",
+    "url": "https://ncase.itch.io/wbwwb",
+    "cover_url": "https://img.itch.zone/aW1hZ2UvOTIxMTUvNDU0MDMxLnBuZw==/original/qEmwk6.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvOTIxMTUvNDM0OTExLnBuZw==/original/GkCZT7.png",
+        "https://img.itch.zone/aW1hZ2UvOTIxMTUvNDM0OTEyLnBuZw==/original/qdwm0d.png",
+        "https://img.itch.zone/aW1hZ2UvOTIxMTUvNDM0OTE0LnBuZw==/original/goFgJo.png"
+    ],
+    "description": "a game about news cycles, vicious cycles, infinite cycles",
+    "author": "Nicky Case!",
+    "author_url": "https://ncase.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5"
+        ],
+        "tools": {
+            "PixiJS": "https://itch.io/games/made-with-pixijs"
+        },
+        "tags": {
+            "Comedy": "https://itch.io/games/tag-comedy",
+            "Dark Humor": "https://itch.io/games/tag-dark-humor",
+            "Experimental": "https://itch.io/games/tag-experimental"
+        },
+        "code_license": {
+            "Unlicense": "https://itch.io/games/code-unlicense"
+        },
+        "asset_license": {
+            "Creative Commons Zero v1.0 Universal": "https://itch.io/games/assets-cc0"
+        },
+        "length": "A few minutes",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Mouse": "https://itch.io/games/input-mouse"
+        },
+        "mentions": {
+            "What every developer can learn from shor...": "https://itch.io/blog/1828/what-every-developer-can-learn-from-short-games"
+        }
+    },
+    "rating": {
+        "average": 4.8,
+        "votes": 6811
+    },
+    "errors": [],
+    "external_downloads": []
+}

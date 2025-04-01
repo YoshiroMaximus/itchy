@@ -1,0 +1,45 @@
+{
+    "game_id": 1619546,
+    "title": "GIMMIKO CLASSIC",
+    "url": "https://pep.itch.io/gimmikogmtk",
+    "cover_url": "https://img.itch.zone/aW1nLzk1MzM5NDYucG5n/original/RmtqjN.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTYxOTU0Ni85NTM0OTQ2LnBuZw==/original/deMPDN.png",
+        "https://img.itch.zone/aW1hZ2UvMTYxOTU0Ni85NTUyNTA4LnBuZw==/original/YK1%2FhX.png",
+        "https://img.itch.zone/aW1hZ2UvMTYxOTU0Ni85NTUyNTA3LnBuZw==/original/AoMsJi.png",
+        "https://img.itch.zone/aW1hZ2UvMTYxOTU0Ni85NTUyNTA5LnBuZw==/original/3V6C6U.png",
+        "https://img.itch.zone/aW1hZ2UvMTYxOTU0Ni85NTUyNTI0LnBuZw==/original/cH4dbU.png"
+    ],
+    "description": "Build your gimmick dice and battle against waves of fearsome monsters!",
+    "author": "Multiple authors",
+    "author_url": "https://pep.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5"
+        ],
+        "authors": {
+            "Zizou": "https://pep.itch.io",
+            "prutte": "https://prutte.itch.io"
+        },
+        "genre": {
+            "Fighting": "https://itch.io/games/tag-fighting"
+        },
+        "tools": {
+            "GameMaker": "https://itch.io/games/made-with-gamemaker"
+        },
+        "tags": {
+            "Dice": "https://itch.io/games/tag-dice",
+            "Game Maker's Toolkit Jam": "https://itch.io/games/tag-gmtkjam",
+            "gmtkjam2022": "https://itch.io/games/tag-gmtkjam2022",
+            "Roguelike": "https://itch.io/games/tag-roguelike",
+            "Roguelite": "https://itch.io/games/tag-roguelite"
+        }
+    },
+    "rating": {
+        "average": 4.7,
+        "votes": 70
+    },
+    "errors": [],
+    "external_downloads": []
+}

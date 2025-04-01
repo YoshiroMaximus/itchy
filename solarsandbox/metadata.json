@@ -1,0 +1,66 @@
+{
+    "game_id": 2533752,
+    "title": "Solar Sandbox",
+    "url": "https://totoriel.itch.io/solarsandbox",
+    "cover_url": "https://img.itch.zone/aW1nLzIwNDY2NzgxLmdpZg==/original/bw2X49.gif",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/original/IPlvAT.png",
+        "https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5Ni5wbmc=/original/%2BGHMHq.png",
+        "https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU1NC5wbmc=/original/74vyip.png",
+        "https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU2NS5wbmc=/original/ZMZn5m.png",
+        "https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU4My5wbmc=/original/k%2BD3cG.png"
+    ],
+    "description": "Sandbox",
+    "updated_at": "2025-03-28T21:40:00",
+    "author": "totoriel",
+    "author_url": "https://totoriel.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux",
+            "Android"
+        ],
+        "genre": {
+            "Simulation": "https://itch.io/games/genre-simulation"
+        },
+        "tools": {
+            "Godot": "https://itch.io/games/made-with-godot"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Godot": "https://itch.io/games/tag-godot",
+            "Indie": "https://itch.io/games/tag-indie",
+            "No AI": "https://itch.io/games/tag-no-ai",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Sandbox": "https://itch.io/games/tag-sandbox",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Space": "https://itch.io/games/tag-space",
+            "Space Sim": "https://itch.io/games/tag-space-sim"
+        },
+        "length": "A few seconds",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Keyboard": "https://itch.io/games/input-keyboard",
+            "Mouse": "https://itch.io/games/input-mouse",
+            "Xbox controller": "https://itch.io/games/input-x360",
+            "Gamepad (any)": "https://itch.io/games/input-gamepad",
+            "Joystick": "https://itch.io/games/input-joystick",
+            "Touchscreen": "https://itch.io/games/input-touchscreen"
+        },
+        "accessibility": {
+            "High-contrast": "https://itch.io/games/accessibility-highcontrast",
+            "Interactive tutorial": "https://itch.io/games/accessibility-tutorial",
+            "One button": "https://itch.io/games/accessibility-one-button"
+        }
+    },
+    "rating": {
+        "average": 4.4,
+        "votes": 31
+    },
+    "errors": [],
+    "external_downloads": []
+}

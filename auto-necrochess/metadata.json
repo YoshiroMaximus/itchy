@@ -1,0 +1,41 @@
+{
+    "game_id": 1958809,
+    "title": "Auto Necrochess",
+    "url": "https://stopsignal.itch.io/auto-necrochess",
+    "cover_url": "https://img.itch.zone/aW1nLzE1MTQ3NjE2LnBuZw==/original/4%2FbNNU.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTk1ODgwOS8xMTU5NjAyNC5wbmc=/original/70tF2R.png",
+        "https://img.itch.zone/aW1hZ2UvMTk1ODgwOS8xMTU5NjAyMy5wbmc=/original/FRgfus.png",
+        "https://img.itch.zone/aW1hZ2UvMTk1ODgwOS8xMTU5NjAyNS5wbmc=/original/jMedlM.png"
+    ],
+    "description": "Spooky Auto-Battler!",
+    "author": "Stopsignal",
+    "author_url": "https://stopsignal.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Android"
+        ],
+        "genre": {
+            "Strategy": "https://itch.io/games/genre-strategy"
+        },
+        "tools": {
+            "GameMaker": "https://itch.io/games/made-with-gamemaker"
+        },
+        "tags": {
+            "auto-battler": "https://itch.io/games/tag-auto-battler",
+            "autochess": "https://itch.io/games/tag-autochess",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Skeletons": "https://itch.io/games/tag-skeletons",
+            "Wizards": "https://itch.io/games/tag-wizards"
+        }
+    },
+    "rating": {
+        "average": 4.7,
+        "votes": 579
+    },
+    "errors": [],
+    "external_downloads": []
+}

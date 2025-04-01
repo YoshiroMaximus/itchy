@@ -1,0 +1,68 @@
+{
+    "game_id": 1116350,
+    "title": "purrgatory",
+    "url": "https://nivrad00.itch.io/purrgatory",
+    "cover_url": "https://img.itch.zone/aW1nLzEyMjIxMjAwLmdpZg==/original/iTOgtd.gif",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYxLmdpZg==/original/QUjpcV.gif",
+        "https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYzLnBuZw==/original/ufYJj0.png",
+        "https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTcyODQ5LmdpZg==/original/CB3PXC.gif",
+        "https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NjIyLnBuZw==/original/0Ja9hP.png"
+    ],
+    "description": "a slice-of-death adventure",
+    "author": "Niv \ud83e\udd8c",
+    "author_url": "https://nivrad00.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "genre": {
+            "Visual Novel": "https://itch.io/games/genre-visual-novel"
+        },
+        "tools": {
+            "Godot": "https://itch.io/games/made-with-godot"
+        },
+        "tags": {
+            "Cats": "https://itch.io/games/tag-cats",
+            "Cute": "https://itch.io/games/tag-cute",
+            "Funny": "https://itch.io/games/tag-funny",
+            "Furry": "https://itch.io/games/tag-furry",
+            "Hand-drawn": "https://itch.io/games/tag-hand-drawn",
+            "LGBT": "https://itch.io/games/tag-lgbt",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Point & Click": "https://itch.io/games/tag-point-and-click",
+            "Slice Of Life": "https://itch.io/games/tag-slice-of-life",
+            "Story Rich": "https://itch.io/games/tag-story-rich"
+        },
+        "length": "A few hours",
+        "languages": {
+            "English": "https://itch.io/games/lang-en",
+            "Spanish; Castilian": "https://itch.io/games/lang-es",
+            "Spanish; Latin America": "https://itch.io/games/lang-es-419",
+            "Italian": "https://itch.io/games/lang-it",
+            "Polish": "https://itch.io/games/lang-pl",
+            "Portuguese (Brazil)": "https://itch.io/games/lang-pt-BR",
+            "Chinese (Simplified)": "https://itch.io/games/lang-zh_Hans"
+        },
+        "inputs": {
+            "Keyboard": "https://itch.io/games/input-keyboard",
+            "Mouse": "https://itch.io/games/input-mouse"
+        },
+        "accessibility": {
+            "Color-blind friendly": "https://itch.io/games/accessibility-colorblind",
+            "High-contrast": "https://itch.io/games/accessibility-highcontrast"
+        },
+        "links": {
+            "Steam": "https://store.steampowered.com/app/1713610/Purrgatory/",
+            "Twitter/X": "https://twitter.com/purrgatorygame"
+        }
+    },
+    "rating": {
+        "average": 4.9,
+        "votes": 1127
+    },
+    "errors": [],
+    "external_downloads": []
+}

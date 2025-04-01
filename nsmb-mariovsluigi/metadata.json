@@ -1,0 +1,65 @@
+{
+    "game_id": 1445831,
+    "title": "New Super Mario Bros. - Mario Vs Luigi",
+    "url": "https://ipodtouch0218.itch.io/nsmb-mariovsluigi",
+    "cover_url": "https://img.itch.zone/aW1nLzg0NDE3ODcucG5n/original/UI6zrA.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTQ0NTgzMS84NDQxNzg5LnBuZw==/original/nhBjFu.png",
+        "https://img.itch.zone/aW1hZ2UvMTQ0NTgzMS84NDQxODY3LnBuZw==/original/8%2B5POD.png"
+    ],
+    "description": null,
+    "author": "ipodtouch0218",
+    "author_url": "https://ipodtouch0218.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "genre": {
+            "Platformer": "https://itch.io/games/genre-platformer"
+        },
+        "tools": {
+            "Unity": "https://itch.io/games/made-with-unity",
+            "Blender": "https://itch.io/games/made-with-blender"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Arcade": "https://itch.io/games/tag-arcade",
+            "Fangame": "https://itch.io/games/tag-fangame",
+            "Multiplayer": "https://itch.io/games/tag-multiplayer",
+            "Side Scroller": "https://itch.io/games/tag-side-scroller",
+            "Unity": "https://itch.io/games/tag-unity"
+        },
+        "length": "A few minutes",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Keyboard": "https://itch.io/games/input-keyboard",
+            "Gamepad (any)": "https://itch.io/games/input-gamepad"
+        },
+        "accessibility": {
+            "Configurable controls": "https://itch.io/games/accessibility-configurable-controls"
+        },
+        "multiplayer": {
+            "Server-based networked multiplayer": "https://itch.io/games/multiplayer-server"
+        },
+        "links": {
+            "Source code": "https://github.com/ipodtouch0218/NSMB-MarioVsLuigi",
+            "Support": "https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/issues"
+        }
+    },
+    "rating": {
+        "average": 4.8,
+        "votes": 841
+    },
+    "errors": [
+        "Upload metadata incomplete: {'game_id': 1445831, 'storage': 'external', 'id': 5440766, 'host': 'github.com', 'traits': {}, 'type': 'sourcecode', 'created_at': '2022-03-18T00:44:12.000000000Z', 'position': 1, 'updated_at': '2022-03-29T02:32:41.000000000Z', 'display_name': 'Source'}"
+    ],
+    "external_downloads": [
+        "https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/tag/v1.7.1.0-beta"
+    ]
+}

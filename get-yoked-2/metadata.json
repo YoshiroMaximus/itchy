@@ -1,0 +1,57 @@
+{
+    "game_id": 3264431,
+    "title": "GET YOKED: Extreme Bodybuilding",
+    "url": "https://gregs-games.itch.io/get-yoked-2",
+    "cover_url": "https://img.itch.zone/aW1nLzE5NDg3OTk2LnBuZw==/original/axbMzw.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTQxMC5naWY=/original/%2FjC8qe.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8xOTUwMjE3NS5naWY=/original/A49o9N.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTMzNS5naWY=/original/KuKoE1.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTQyMy5naWY=/original/0BuMpD.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTQ0NC5naWY=/original/QV2wqZ.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTQ2MC5naWY=/original/qsIHya.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8xOTUwMjIyMS5naWY=/original/3j5yv0.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8xOTUwMjIzMi5naWY=/original/LwnpMc.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8yMDE0NTM2Ni5naWY=/original/Ho9Ba3.gif",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8xOTUwMjI1NC5wbmc=/original/iVTDcG.png",
+        "https://img.itch.zone/aW1hZ2UvMzI2NDQzMS8xOTUwMjI2Mi5wbmc=/original/5XrKdr.png"
+    ],
+    "description": "Bodybuilding Roguelike Deckbuilder.",
+    "updated_at": "2025-03-24T15:06:00",
+    "published_at": "2025-03-06T16:02:00",
+    "author": "gregs-games",
+    "author_url": "https://gregs-games.itch.io",
+    "extra": {
+        "status": "Prototype",
+        "platforms": [
+            "HTML5",
+            "Windows"
+        ],
+        "genre": {
+            "Card Game": "https://itch.io/games/tag-card-game"
+        },
+        "tools": {
+            "Unity": "https://itch.io/games/made-with-unity"
+        },
+        "tags": {
+            "bodybuilding": "https://itch.io/games/tag-bodybuilding",
+            "Comedy": "https://itch.io/games/tag-comedy",
+            "Deck Building": "https://itch.io/games/tag-deck-building",
+            "Funny": "https://itch.io/games/tag-funny",
+            "Non violent": "https://itch.io/games/tag-non-violent",
+            "Relaxing": "https://itch.io/games/tag-relaxing",
+            "Roguelike": "https://itch.io/games/tag-roguelike",
+            "Short": "https://itch.io/games/tag-short",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer"
+        },
+        "links": {
+            "Steam": "https://store.steampowered.com/app/3594610/GET_YOKED_Extreme_Bodybuilding/"
+        }
+    },
+    "rating": {
+        "average": 4.6,
+        "votes": 133
+    },
+    "errors": [],
+    "external_downloads": []
+}

@@ -1,0 +1,2825 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <meta content="https://img.itch.zone/aW1nLzIwNDY2NzgxLmdpZg==/original/bw2X49.gif" property="og:image"/>
+  <link href="https://img.itch.zone/aW1nLzIwNDY2NzgxLmdpZg==/32x32%23m/SHoYrp.gif" rel="icon" type="image/gif"/>
+  <meta content="itch.io" property="og:site_name"/>
+  <meta content="4503599627724030" property="twitter:account_id"/>
+  <meta content="Sandbox" property="og:description"/>
+  <meta content="Sandbox" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="games/2533752" name="itch:path"/>
+  <link href="https://totoriel.itch.io/solarsandbox/devlog.rss" rel="alternate" title="Solar Sandbox Devlog" type="application/rss+xml"/>
+  <meta content="@itchio" name="twitter:site"/>
+  <meta content="Solar Sandbox by totoriel" name="twitter:title"/>
+  <meta content="Sandbox. Play in your browser" name="twitter:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://img.itch.zone/aW1nLzIwNDY2NzgxLmdpZg==/508x254%23mb/ow%2F5fh.gif" property="twitter:image"/>
+  <meta content="https://totoriel.itch.io/solarsandbox" name="twitter:url"/>
+  <script type="application/ld+json">
+   {"itemListElement":[{"position":1,"@type":"ListItem","item":{"name":"Games","@id":"https:\/\/itch.io\/games"}},{"position":2,"@type":"ListItem","item":{"name":"Simulation","@id":"https:\/\/itch.io\/games\/genre-simulation"}},{"position":3,"@type":"ListItem","item":{"name":"Free","@id":"https:\/\/itch.io\/games\/free"}}],"@context":"http:\/\/schema.org","@type":"BreadcrumbList"}
+  </script>
+  <script type="application/ld+json">
+   {"@type":"Product","name":"Solar Sandbox","aggregateRating":{"ratingCount":31,"@type":"AggregateRating","ratingValue":"4.4"},"@context":"http:\/\/schema.org\/","description":"Sandbox"}
+  </script>
+  <title>
+   Solar Sandbox by totoriel
+  </title>
+  <meta name="csrf_token" value="WyJWdjR6IiwxNzQzNTMzMjgzLCJWWkwyQUkySzVXUmJDMW4iXQ==.wF7XMnjySbDtGBfwx/PzL7AusFM="/>
+  <link href="https://static.itch.io/game.css?1743210765" rel="stylesheet"/>
+  <script type="text/javascript">
+   window.itchio_translations_url = 'https://static.itch.io/translations';
+  </script>
+  <script src="https://static.itch.io/lib.min.js?1743210765" type="text/javascript">
+  </script>
+  <script src="https://static.itch.io/bundle.min.js?1743210765" type="text/javascript">
+  </script>
+  <script src="https://static.itch.io/lib/jquery.maskMoney.js" type="text/javascript">
+  </script>
+  <script data-src="https://static.itch.io/react.min.js?1743210765" id="lib_react_src">
+  </script>
+  <script src="https://static.itch.io/game.min.js?1743210765" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   I.current_user = null;I.subdomain = true;I.coep_set = true;
+  </script>
+  <script type="text/javascript">
+   if (!window.location.hostname.match(/localhost/)) {      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', "G-36R7NPBMLS", {});
+      (function(d, t, s, m) {
+        s = d.createElement(t);
+        s.src = "https:\/\/www.googletagmanager.com\/gtag\/js?id=G-36R7NPBMLS";
+        s.async = 1;
+        m = d.getElementsByTagName(t)[0];
+        m.parentNode.insertBefore(s, m);
+      })(document, "script");
+      }
+  </script>
+  <style id="game_theme" type="text/css">
+   :root{--itchio_ui_bg: #5b5b5b;--itchio_ui_bg_dark: #555555}.wrapper{--itchio_font_family: Lato;--itchio_bg_color: #ffffff;--itchio_bg2_color: rgba(0, 0, 0, 0);--itchio_bg2_sub: #191919;--itchio_text_color: #ffffff;--itchio_link_color: #ffffff;--itchio_border_color: #262626;--itchio_button_color: #ffffff;--itchio_button_fg_color: #333333;--itchio_button_shadow_color: transparent;background-color:#ffffff;/*! */ background-image: url(https://img.itch.zone/aW1nLzIwMTkyODg0LnBuZw==/original/URecHD.png);;background-repeat: repeat;background-position: 100% 0; /* */}.inner_column{color:#ffffff;font-family:Lato,Lato,LatoExtended,sans-serif;background-color:rgba(0, 0, 0, 0)}.inner_column ::selection{color:#333333;background:#ffffff}.inner_column ::-moz-selection{color:#333333;background:#ffffff}.inner_column h1,.inner_column h2,.inner_column h3,.inner_column h4,.inner_column h5,.inner_column h6{font-family:sans-serif;font-weight:bold;color:#ffffff}.inner_column a,.inner_column .footer a{color:#ffffff}.inner_column .button,.inner_column .button:hover,.inner_column .button:active{background-color:#ffffff;color:#333333;text-shadow:0 1px 0px transparent}.inner_column hr{background-color:#262626}.inner_column table{border-color:#262626}.inner_column .redactor-box .redactor-toolbar li a{color:#ffffff}.inner_column .redactor-box .redactor-toolbar li a:hover,.inner_column .redactor-box .redactor-toolbar li a:active,.inner_column .redactor-box .redactor-toolbar li a.redactor-act{background-color:#ffffff !important;color:#333333 !important;text-shadow:0 1px 0px transparent !important}.inner_column .redactor-box .redactor-toolbar .re-button-tooltip{text-shadow:none}.game_frame{background:#191919;/*! */  /* */}.game_frame .embed_info{background-color:rgba(0, 0, 0, 0.85)}.game_loading .loader_bar .loader_bar_slider{background-color:#ffffff}.view_game_page .reward_row,.view_game_page .bundle_row{border-color:#191919 !important}.view_game_page .game_info_panel_widget{background:rgba(25, 25, 25, 0)}.view_game_page .star_value .star_fill{color:#ffffff}.view_game_page .rewards .quantity_input{background:rgba(25, 25, 25, 0);border-color:rgba(255, 255, 255, 0.5);color:#ffffff}.view_game_page .right_col{display:block}.game_devlog_page li .meta_row .post_likes{border-color:#191919}.game_devlog_post_page .post_like_button{box-shadow:inset 0 0 0 1px #262626}.game_comments_widget .community_post .post_footer a,.game_comments_widget .community_post .post_footer .vote_btn,.game_comments_widget .community_post .post_header .post_date a,.game_comments_widget .community_post .post_header .edit_message{color:rgba(255, 255, 255, 0.5)}.game_comments_widget .community_post .reveal_full_post_btn{background:linear-gradient(to bottom, transparent, #000000 50%, #000000);color:#ffffff}.game_comments_widget .community_post .post_votes{border-color:rgba(255, 255, 255, 0.2)}.game_comments_widget .community_post .post_votes .vote_btn:hover{background:rgba(255, 255, 255, 0.05)}.game_comments_widget .community_post .post_footer .vote_btn{border-color:rgba(255, 255, 255, 0.5)}.game_comments_widget .community_post .post_footer .vote_btn span{color:inherit}.game_comments_widget .community_post .post_footer .vote_btn:hover,.game_comments_widget .community_post .post_footer .vote_btn.voted{background-color:#ffffff;color:#333333;text-shadow:0 1px 0px transparent;border-color:#ffffff}.game_comments_widget .form .redactor-box,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget{border-color:rgba(255, 255, 255, 0.5);background:transparent}.game_comments_widget .form .redactor-layer,.game_comments_widget .form .redactor-toolbar,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget{background:rgba(25, 25, 25, 0)}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button{color:inherit;opacity:0.6}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active{opacity:1;background-color:#ffffff !important;color:#333333 !important;text-shadow:0 1px 0px transparent !important}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,.game_comments_widget .form .forms_markdown_input_widget li{border-color:rgba(255, 255, 255, 0.5)}.game_comments_widget .form textarea{border-color:rgba(255, 255, 255, 0.5);background:rgba(25, 25, 25, 0);color:inherit}.game_comments_widget .form .redactor-toolbar{border-color:rgba(255, 255, 255, 0.5)}.game_comments_widget .hint{color:rgba(255, 255, 255, 0.5)}.game_community_preview_widget .community_topic_row .topic_tag{background-color:#191919}.footer .svgicon,.view_game_page .more_information_toggle .svgicon{fill:#ffffff !important}
+  </style>
+ </head>
+ <body class="embedded_game locale_en game_layout_widget layout_widget responsive no_theme_toggle" data-host="itch.io" data-page_name="view_game">
+  <div class="goal_banner_widget base_widget" id="goal_banner_5849692">
+   <div class="goal_banner_inner">
+    <div class="cover_image" style="background-image: url('https://img.itch.zone/aW1nLzIwNDY2NzgxLmdpZg==/189x150%23/DPgdIi.gif')">
+    </div>
+    <div class="center_column">
+     <a href="http://itch.io" target="_blank" title="Visit itch.io">
+      <img class="mini_logo" height="20" src="https://static.itch.io/images/itchio-white.svg" width="65"/>
+     </a>
+     <h3>
+      Help this game reach its goal
+     </h3>
+     <div class="action_area">
+      <a class="button buy_btn" href="https://totoriel.itch.io/solarsandbox/purchase">
+       Contribute now
+      </a>
+     </div>
+     <div class="goal_progress_widget base_widget" id="goal_progress_2255543">
+      <div class="stat_bar">
+       <div class="stat_box primary_stat">
+        <div class="stat_label">
+         Raised
+        </div>
+        <div class="stat_value">
+         $38.98
+        </div>
+       </div>
+       <div class="stat_box right_box">
+        <div class="stat_label">
+         Goal
+        </div>
+        <div class="stat_value">
+         $1,000.00
+        </div>
+       </div>
+      </div>
+      <div class="progress_bar">
+       <div class="progress_inner" style="width: 3.898%">
+       </div>
+      </div>
+      <div class="stat_summary">
+       <span class="stat_inline">
+        <div class="stat_value">
+         3%
+        </div>
+        <div class="stat_label">
+         of goal
+        </div>
+       </span>
+       <span class="stat_inline">
+        <div class="stat_value">
+         7
+        </div>
+        <div class="stat_label">
+         contributors
+        </div>
+       </span>
+       <span class="extra_stats">
+        <span class="stat_inline">
+         <div class="stat_value">
+          $5.56
+         </div>
+         <div class="stat_label">
+          average contribution
+         </div>
+        </span>
+        <span class="stat_inline">
+         <div class="stat_value">
+          $12.00
+         </div>
+         <div class="stat_label">
+          top contribution
+         </div>
+        </span>
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <ul class="user_tools hidden" id="user_tools">
+   <li>
+    <a class="action_btn view_more" href="https://totoriel.itch.io">
+     <svg aria-hidden="" class="svgicon icon_itchio_new" height="16" role="img" version="1.1" viewbox="0 0 262.728 235.452" width="18">
+      <path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z">
+      </path>
+     </svg>
+     <span class="full_label">
+      View all by totoriel
+     </span>
+     <span class="mobile_label">
+      totoriel
+     </span>
+    </a>
+   </li>
+   <li>
+    <a class="follow_user_btn action_btn" data-follow_url="https://totoriel.itch.io/-/follow?source=game" data-register_action="follow_user" data-unfollow_url="https://totoriel.itch.io/-/unfollow?source=game" data-user_id="9994594" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=follow_user">
+     <svg aria-hidden="" class="svgicon icon_user_plus on_follow" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+      </path>
+      <circle cx="8.5" cy="7" r="4">
+      </circle>
+      <line x1="20" x2="20" y1="8" y2="14">
+      </line>
+      <line x1="23" x2="17" y1="11" y2="11">
+      </line>
+     </svg>
+     <svg aria-hidden="" class="svgicon icon_user_check on_unfollow" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+      </path>
+      <circle cx="8.5" cy="7" r="4">
+      </circle>
+      <polyline points="17 11 19 13 23 9">
+      </polyline>
+     </svg>
+     <span class="on_follow">
+      <span class="full_label">
+       Follow totoriel
+      </span>
+      <span class="mobile_label">
+       Follow
+      </span>
+     </span>
+     <span class="on_unfollow">
+      <span class="full_label">
+       Following totoriel
+      </span>
+      <span class="mobile_label">
+       Following
+      </span>
+     </span>
+    </a>
+   </li>
+   <li>
+    <a class="action_btn add_to_collection_btn" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=add_to_collection">
+     <svg aria-hidden="" class="svgicon icon_collection_add2" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M 1,6 H 14">
+      </path>
+      <path d="M 1,11 H 14">
+      </path>
+      <path d="m 1,16 h 9">
+      </path>
+      <path d="M 18,11 V 21">
+      </path>
+      <path d="M 13,16 H 23">
+      </path>
+     </svg>
+     <span class="full_label">
+      Add To Collection
+     </span>
+     <span class="mobile_label">
+      Collection
+     </span>
+    </a>
+   </li>
+   <li class="community_link">
+    <a class="action_btn" href="https://totoriel.itch.io/solarsandbox#comments">
+     <svg aria-hidden="" class="svgicon icon_comment" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+      </path>
+     </svg>
+     Comments
+    </a>
+   </li>
+   <li class="devlog_link">
+    <a class="action_btn" href="https://totoriel.itch.io/solarsandbox/devlog">
+     <svg aria-hidden="" class="svgicon icon_news" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <rect height="18" rx="2" ry="2" width="22" x="1" y="3">
+      </rect>
+      <line x1="6" x2="18" y1="8" y2="8">
+      </line>
+      <line x1="6" x2="18" y1="12" y2="12">
+      </line>
+      <line x1="6" x2="18" y1="16" y2="16">
+      </line>
+     </svg>
+     Devlog
+    </a>
+   </li>
+   <li>
+    <a class="action_btn related_games_btn" data-label="related_btn" href="https://itch.io/games-like/2533752/solarsandbox" target="_blank">
+     <svg aria-hidden="" class="svgicon icon_map" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6">
+      </polygon>
+      <line x1="8" x2="8" y1="2" y2="18">
+      </line>
+      <line x1="16" x2="16" y1="6" y2="22">
+      </line>
+     </svg>
+     <span class="full_label">
+      Related games
+     </span>
+     <span class="mobile_label">
+      Related
+     </span>
+    </a>
+   </li>
+  </ul>
+  <script type="text/javascript">
+   new I.GameUserTools('#user_tools')
+  </script>
+  <div class="main wrapper" id="wrapper">
+   <div class="inner_column size_very_large family_lato" id="inner_column">
+    <div class="header has_image align_center" id="header">
+     <img alt="Solar Sandbox" src="https://img.itch.zone/aW1nLzIwMTkyNDg0LnBuZw==/original/qke%2Fra.png"/>
+     <h1 class="game_title" itemprop="name">
+      Solar Sandbox
+     </h1>
+    </div>
+    <div class="view_html_game_page view_game_page page_widget base_widget buy_on_top ready" id="view_html_game_656017">
+     <div class="html_embed_widget base_widget embed_wrapper" id="html_embed_5078573">
+      <div class="game_frame game_pending" data-height="720" data-width="1280" style="width: 1280px; height: 720px">
+       <button class="fullscreen_btn" title="Enter fullscreen">
+        <img src="https://itch.io/static/images/enlarge.svg?1743210765"/>
+       </button>
+       <div class="iframe_placeholder" data-iframe='&lt;iframe allowtransparency="true" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" msallowfullscreen="true" frameborder="0" mozallowfullscreen="true" id="game_drop" src="https://html.itch.zone/html/13206384/HTML/index.html" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true"&gt;&lt;/iframe&gt;'>
+        <button class="button load_iframe_btn">
+         <svg aria-hidden="" class="svgicon icon_play" fill="none" height="24" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="24">
+          <circle cx="12" cy="12" r="10">
+          </circle>
+          <polygon points="10 8 16 12 10 16 10 8">
+          </polygon>
+         </svg>
+         Run game
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="donate">
+      <a class="button donate_btn" data-donate="false" href="https://totoriel.itch.io/solarsandbox/purchase">
+       Download Now
+      </a>
+     </div>
+     <div class="columns">
+      <div class="left_col column">
+       <div class="formatted_description user_formatted">
+        <p>
+         <strong>
+          Solar Sandbox
+         </strong>
+         is a sandbox game where you can interact with and simulate physics in space. The game is being developed on the Godot Engine.
+        </p>
+        <p>
+         Music by: Nikita Shaposhnikov(
+         <a href="https://www.instagram.com/eight.gates.music" referrerpolicy="origin" rel="nofollow noopener">
+          https://www.instagram.com/eight.gates.music
+         </a>
+         )
+         <br/>
+         <br/>
+         <strong>
+          Join our Discord for beta testing the new game updates for free on mobile :
+          <a href="https://discord.gg/ysHGbqWkTm" referrerpolicy="origin" rel="nofollow noopener">
+           https://discord.gg/ysHGbqWkTm
+           <br/>
+           <br/>
+          </a>
+         </strong>
+        </p>
+        <p>
+         If you want access to early content, the ability to vote for game features, test the game on any platform (except Apple), and have a higher chance of your suggestions being added to the game, join my Patreon
+         <strong>
+          :
+          <a href="https://patreon.com/Totoriel?utm_medium=unknown&amp;utm_source=join_link&amp;utm_campaign=creatorshare_creator&amp;utm_content=copyLink" referrerpolicy="origin" rel="nofollow noopener">
+           https://patreon.com/Totoriel?utm_medium=unknown&amp;utm_source=join_link&amp;utm_campaig...
+          </a>
+         </strong>
+        </p>
+       </div>
+       <div class="more_information_toggle">
+        <div class="toggle_row">
+         <a class="toggle_info_btn" href="javascript:void(0)">
+          More information
+          <svg aria-hidden="" class="svgicon icon_down_tick" height="6" role="img" version="1.1" viewbox="0 0 37 20" width="12">
+           <path d="m2.0858 0c-1.1535 0-2.0858 0.86469-2.0858 1.9331 0 0.5139 0.21354 1.0183 0.38704 1.1881l18.113 16.879 18.112-16.879c0.174-0.1696 0.388-0.674 0.388-1.1879 0-1.0684-0.932-1.9331-2.086-1.9331-0.577 0-1.111 0.23008-1.49 0.57992l-14.924 13.894-14.925-13.893c-0.3777-0.34998-0.9134-0.581-1.4902-0.581z">
+           </path>
+          </svg>
+         </a>
+        </div>
+        <div class="info_panel_wrapper">
+         <div class="game_info_panel_widget base_widget" id="game_info_panel_3109405">
+          <table>
+           <tbody>
+            <tr>
+             <td>
+              Updated
+             </td>
+             <td>
+              <abbr title="28 March 2025 @ 21:40 UTC">
+               <span aria-hidden="true" class="icon icon-stopwatch">
+               </span>
+               3 days ago
+              </abbr>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Status
+             </td>
+             <td>
+              <a href="https://itch.io/games/in-development">
+               In development
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Platforms
+             </td>
+             <td>
+              <a href="https://itch.io/games/html5">
+               HTML5
+              </a>
+              ,
+              <a href="https://itch.io/games/platform-windows">
+               Windows
+              </a>
+              ,
+              <a href="https://itch.io/games/platform-linux">
+               Linux
+              </a>
+              ,
+              <a href="https://itch.io/games/platform-android">
+               Android
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Rating
+             </td>
+             <td>
+              <div class="aggregate_rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" title="4.4">
+               <div class="star_value" content="4.4" itemprop="ratingValue">
+                <span class="screenreader_only">
+                 Rated 4.4 out of 5 stars
+                </span>
+                <div class="star_fill" style="width: 87.74194%">
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                </div>
+                <div class="star_holes">
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                </div>
+               </div>
+               <span class="rating_count" content="31" itemprop="ratingCount">
+                (31
+                <span class="screenreader_only">
+                 total ratings
+                </span>
+                )
+               </span>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Author
+             </td>
+             <td>
+              <a href="https://totoriel.itch.io">
+               totoriel
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Genre
+             </td>
+             <td>
+              <a href="https://itch.io/games/genre-simulation">
+               Simulation
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Made with
+             </td>
+             <td>
+              <a href="https://itch.io/games/made-with-godot">
+               Godot
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Tags
+             </td>
+             <td>
+              <a href="https://itch.io/games/tag-2d">
+               2D
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-godot">
+               Godot
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-indie">
+               Indie
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-no-ai">
+               No AI
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-pixel-art">
+               Pixel Art
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-sandbox">
+               Sandbox
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-singleplayer">
+               Singleplayer
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-space">
+               Space
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-space-sim">
+               Space Sim
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Average session
+             </td>
+             <td>
+              <a href="https://itch.io/games/duration-seconds">
+               A few seconds
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Languages
+             </td>
+             <td>
+              <a href="https://itch.io/games/lang-en">
+               English
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Inputs
+             </td>
+             <td>
+              <a href="https://itch.io/games/input-keyboard">
+               Keyboard
+              </a>
+              ,
+              <a href="https://itch.io/games/input-mouse">
+               Mouse
+              </a>
+              ,
+              <a href="https://itch.io/games/input-x360">
+               Xbox controller
+              </a>
+              ,
+              <a href="https://itch.io/games/input-gamepad">
+               Gamepad (any)
+              </a>
+              ,
+              <a href="https://itch.io/games/input-joystick">
+               Joystick
+              </a>
+              ,
+              <a href="https://itch.io/games/input-touchscreen">
+               Touchscreen
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Accessibility
+             </td>
+             <td>
+              <a href="https://itch.io/games/accessibility-highcontrast">
+               High-contrast
+              </a>
+              ,
+              <a href="https://itch.io/games/accessibility-tutorial">
+               Interactive tutorial
+              </a>
+              ,
+              <a href="https://itch.io/games/accessibility-one-button">
+               One button
+              </a>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <h2 id="download">
+        Download
+       </h2>
+       <div class="buy_row">
+        <div class="button_message">
+         <a class="button buy_btn" href="https://totoriel.itch.io/solarsandbox/purchase">
+          Download Now
+         </a>
+         <span class="buy_message">
+          <span class="sub">
+           Name your own price
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="uploads">
+        <p>
+         Click download now to get access to the following files:
+        </p>
+        <div class="upload_list_widget base_widget" id="upload_list_4959269">
+         <div class="upload">
+          <div class="info_column">
+           <div class="upload_name">
+            <strong class="name" title="Solar Sandbox.exe (Windows)">
+             Solar Sandbox.exe (Windows)
+            </strong>
+            <span class="file_size">
+             <span>
+              107 MB
+             </span>
+            </span>
+            <span class="download_platforms">
+             <span aria-hidden="true" class="icon icon-windows8" title="Download for Windows">
+             </span>
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="upload">
+          <div class="info_column">
+           <div class="upload_name">
+            <strong class="name" title="Solar Sandbox (Android)">
+             Solar Sandbox (Android)
+            </strong>
+            <span class="file_size">
+             <span>
+              329 MB
+             </span>
+            </span>
+            <span class="download_platforms">
+             <span aria-hidden="true" class="icon icon-android" title="Download for Android">
+             </span>
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="upload">
+          <div class="info_column">
+           <div class="upload_name">
+            <strong class="name" title="Solar Sandbox (Linux)">
+             Solar Sandbox (Linux)
+            </strong>
+            <span class="file_size">
+             <span>
+              80 MB
+             </span>
+            </span>
+            <span class="download_platforms">
+             <span aria-hidden="true" class="icon icon-tux" title="Download for Linux">
+             </span>
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <h2>
+        Also available on
+       </h2>
+       <div class="app_store_links">
+        <a class="google_play_btn store_btn" data-label="google_play" href="https://play.google.com/store/apps/details?id=solar.sandbox">
+         <img src="https://static.itch.io/images/store_badges/google.png" srcset="https://static.itch.io/images/store_badges/google.png 1x, https://static.itch.io/images/store_badges/google@2x.png 2x"/>
+        </a>
+       </div>
+       <section class="game_devlog" id="devlog">
+        <h2>
+         Development log
+        </h2>
+        <ul>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/913742/patch-notes-11">
+           ​Patch Notes - 1.1
+          </a>
+          <div class="post_date">
+           <abbr title="28 March 2025 @ 05:17 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            4 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/898351/patch-10-full-release">
+           Patch 1.0 Full Release
+          </a>
+          <div class="post_date">
+           <abbr title="03 March 2025 @ 11:42 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            29 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/885907/091-beta">
+           0.9.1 Beta
+          </a>
+          <div class="post_date">
+           <abbr title="12 February 2025 @ 05:59 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            48 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/871578/patch-09-beta">
+           Patch 0.9 Beta
+          </a>
+          <div class="post_date">
+           <abbr title="20 January 2025 @ 07:37 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            71 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/867262/patch-083-beta-release-savingloadinggui-rework">
+           Patch 0.8.3 Beta release : Saving/loading,GUI rework
+          </a>
+          <div class="post_date">
+           <abbr title="12 January 2025 @ 11:51 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            79 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/863437/patch-082-beta">
+           Patch 0.8.2 Beta
+          </a>
+          <div class="post_date">
+           <abbr title="05 January 2025 @ 20:50 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            85 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/854188/patch-08-beta-release-bug-fixes">
+           Patch 0.8 Beta release : Bug fixes
+          </a>
+          <div class="post_date">
+           <abbr title="20 December 2024 @ 12:30 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Dec 20, 2024
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://totoriel.itch.io/solarsandbox/devlog/849249/patch-07-beta-release-performance">
+           Patch 0.7 Beta release (Performance)
+          </a>
+          <div class="post_date">
+           <abbr title="11 December 2024 @ 23:00 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Dec 11, 2024
+           </abbr>
+          </div>
+         </li>
+        </ul>
+        <p>
+         <a class="forward_link" href="https://totoriel.itch.io/solarsandbox/devlog">
+          View all posts
+         </a>
+        </p>
+       </section>
+       <div class="game_comments_widget base_widget" id="game_comments_3376567">
+        <h2 id="comments">
+         Comments
+        </h2>
+        <p class="form_placeholder">
+         <a data-register_action="comment" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox">
+          Log in with itch.io
+         </a>
+         to leave a comment.
+        </p>
+        <div class="community_topic_posts_widget base_widget" id="community_topic_posts_7347004">
+         <div class="community_post_list_widget base_widget" id="community_post_list_5351142">
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":10008738,"id":12525559}' id="post-12525559">
+           <div class="post_anchor" id="first-post">
+           </div>
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/sasiaanders">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwNDc4NDkyLnBuZw==/25x25%23/ILhQ1k.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/sasiaanders">
+               sasiaanders
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-30 14:04:37">
+              <a href="https://itch.io/post/12525559">
+               2 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               У меня игра вылетает но думаю по скриншотам игра офигенная особенно я люблю песочницы
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":12525836}' id="post-12525836">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-30 14:50:47">
+               <a href="https://itch.io/post/12525836">
+                2 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                У тебя iPhone? Потому что если у тебя iPhone, то игра не запустится, и просто чтобы ты знал, что изображения старые, а игра стала на 1000% лучше, и я думаю о порте на iPhone.
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply" data-post='{"user_id":10008738,"id":12527662}' id="post-12527662">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/sasiaanders">
+               <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwNDc4NDkyLnBuZw==/25x25%23/ILhQ1k.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/sasiaanders">
+                 sasiaanders
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-30 19:16:13">
+                <a href="https://itch.io/post/12527662">
+                 1 day ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 У меня Windows
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":12804509,"id":12509570}' id="post-12509570">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/zeal1234">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/zeal1234">
+               zeal1234
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-28 03:00:10">
+              <a href="https://itch.io/post/12509570">
+               4 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               yo i spent the money and didn't get the game :(
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":12509874}' id="post-12509874">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-28 04:54:32">
+               <a href="https://itch.io/post/12509874">
+                4 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                Contact me on Discord so I can give you a key for the game or just type the first 4 letters of your email.
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply" data-post='{"user_id":12804509,"id":12511151}' id="post-12511151">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/zeal1234">
+               <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/zeal1234">
+                 zeal1234
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-28 11:42:50">
+                <a href="https://itch.io/post/12511151">
+                 4 days ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 Wrong game sorry. But best of luck with you're goal.
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"user_id":4514052,"id":12474992}' id="post-12474992">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/dontstopsmiling">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzEzODM5ODIxLmpwZWc=/25x25%23/1dylcO.jpeg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/dontstopsmiling">
+               DONTSTOPSMILING
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-23 05:18:18">
+              <a href="https://itch.io/post/12474992">
+               9 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               as a wise man once said, "Space is cool..."
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":12978925,"id":12457218}' id="post-12457218">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/anthonyissigma1234">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMzM3NTU0LnBuZw==/25x25%23/86VNb1.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/anthonyissigma1234">
+               Ant is soooooo sigma 1234
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-20 02:28:13">
+              <a href="https://itch.io/post/12457218">
+               12 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i  accidentally started the game before the  tutorial XD
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":12458072}' id="post-12458072">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-20 07:03:43">
+               <a href="https://itch.io/post/12458072">
+                12 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                Bro I'm going to be real, I don't know how you managed to do it, like in every game mode there is a tutorial, if you have not done it least once. So can you please tell tell how did you skip it.
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":12978925,"id":12461403}' id="post-12461403">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/anthonyissigma1234">
+               <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMzM3NTU0LnBuZw==/25x25%23/86VNb1.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/anthonyissigma1234">
+                 Ant is soooooo sigma 1234
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-20 20:13:52">
+                <a href="https://itch.io/post/12461403">
+                 11 days ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 I only done it once
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="community_post_replies">
+             <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":12461790}' id="post-12461790">
+              <div class="post_grid">
+               <div class="post_votes">
+                <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                 <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 18 12 6 22 18">
+                  </polygon>
+                 </svg>
+                </a>
+                <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                 <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 6 12 18 22 6">
+                  </polygon>
+                 </svg>
+                </a>
+               </div>
+               <a class="avatar_container" href="https://itch.io/profile/totoriel">
+                <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+                </div>
+               </a>
+               <div class="post_header">
+                <span class="post_author">
+                 <a href="https://itch.io/profile/totoriel">
+                  totoriel
+                 </a>
+                </span>
+                <span class="post_date" title="2025-03-20 21:22:56">
+                 <a href="https://itch.io/post/12461790">
+                  11 days ago
+                 </a>
+                </span>
+                <span class="vote_counts">
+                </span>
+               </div>
+               <div class="post_content">
+                <div class="post_body user_formatted" dir="auto">
+                 <p>
+                  ahh ok thanks for the info.
+                 </p>
+                </div>
+                <div class="post_footer">
+                 <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                  Reply
+                 </a>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":12978925,"id":12461840}' id="post-12461840">
+              <div class="post_grid">
+               <div class="post_votes">
+                <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                 <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 18 12 6 22 18">
+                  </polygon>
+                 </svg>
+                </a>
+                <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                 <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 6 12 18 22 6">
+                  </polygon>
+                 </svg>
+                </a>
+               </div>
+               <a class="avatar_container" href="https://itch.io/profile/anthonyissigma1234">
+                <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMzM3NTU0LnBuZw==/25x25%23/86VNb1.png)">
+                </div>
+               </a>
+               <div class="post_header">
+                <span class="post_author">
+                 <a href="https://itch.io/profile/anthonyissigma1234">
+                  Ant is soooooo sigma 1234
+                 </a>
+                </span>
+                <span class="post_date" title="2025-03-20 21:36:55">
+                 <a href="https://itch.io/post/12461840">
+                  11 days ago
+                 </a>
+                </span>
+                <span class="vote_counts">
+                </span>
+               </div>
+               <div class="post_content">
+                <div class="post_body user_formatted" dir="auto">
+                 <p>
+                  i  usually play open land games and not play sandbox often
+                 </p>
+                </div>
+                <div class="post_footer">
+                 <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                  Reply
+                 </a>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="community_post_replies">
+              <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":12461866}' id="post-12461866">
+               <div class="post_grid">
+                <div class="post_votes">
+                 <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                  <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                   <polygon points="2 18 12 6 22 18">
+                   </polygon>
+                  </svg>
+                 </a>
+                 <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                  <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                   <polygon points="2 6 12 18 22 6">
+                   </polygon>
+                  </svg>
+                 </a>
+                </div>
+                <a class="avatar_container" href="https://itch.io/profile/totoriel">
+                 <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+                 </div>
+                </a>
+                <div class="post_header">
+                 <span class="post_author">
+                  <a href="https://itch.io/profile/totoriel">
+                   totoriel
+                  </a>
+                 </span>
+                 <span class="post_date" title="2025-03-20 21:42:00">
+                  <a href="https://itch.io/post/12461866">
+                   11 days ago
+                  </a>
+                 </span>
+                 <span class="edit_message">
+                  (1 edit)
+                 </span>
+                 <span class="vote_counts">
+                 </span>
+                </div>
+                <div class="post_content">
+                 <div class="post_body user_formatted" dir="auto">
+                  <p>
+                   That's fine everybody has preferences the only thing that I care about is making the game a better version of it self and the people that are playing it to like it even more.
+                   <br/>
+                  </p>
+                 </div>
+                 <div class="post_footer">
+                  <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                   Reply
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"user_id":11723822,"id":12451100}' id="post-12451100">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/laumiro92">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/laumiro92">
+               laumiro92
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-19 00:48:44">
+              <a href="https://itch.io/post/12451100">
+               13 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               <font>
+                <font>
+                 esta bueno, tiene pontencia
+                </font>
+               </font>
+              </p>
+              <p>
+               <font>
+               </font>
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"user_id":12544341,"id":12448826}' id="post-12448826">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/nerb69">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/nerb69">
+               Nerb69
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-18 17:50:12">
+              <a href="https://itch.io/post/12448826">
+               14 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               I hope they add astronauts or some life in space like aliens etc :D
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":2077291,"id":12418132}' id="post-12418132">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/valley15-2">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/valley15-2">
+               valley15-2
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-15 02:31:42">
+              <a href="https://itch.io/post/12418132">
+               17 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Does the mobile version not have controller support? It's not working for me.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":12418717}' id="post-12418717">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-15 04:52:34">
+               <a href="https://itch.io/post/12418717">
+                17 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                On what device are you on?
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply" data-post='{"user_id":2077291,"id":12425632}' id="post-12425632">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/valley15-2">
+               <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/valley15-2">
+                 valley15-2
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-16 05:16:22">
+                <a href="https://itch.io/post/12425632">
+                 16 days ago
+                </a>
+               </span>
+               <span class="edit_message">
+                (1 edit)
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 Retroid Pocket 4 Pro
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"user_id":8975653,"id":12410355}' id="post-12410355">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/allingamesyt">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/allingamesyt">
+               Allingamesyt
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-13 21:14:24">
+              <a href="https://itch.io/post/12410355">
+               18 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+3)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Solar Sandbox Gameplay
+               <br/>
+              </p>
+              <p>
+               <a href="https://youtu.be/EAXnmC2boD4" referrerpolicy="origin" rel="nofollow noopener" target="_blank">
+                https://youtu.be/EAXnmC2boD4
+               </a>
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":4574255,"id":11685112}' id="post-11685112">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/deez12">
+             <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/deez12">
+               deez12
+              </a>
+             </span>
+             <span class="post_date" title="2024-12-29 03:14:56">
+              <a href="https://itch.io/post/11685112">
+               93 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Why is the Google Play page for it not loading? Did it get taken down?
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":11686279}' id="post-11686279">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-12-29 07:34:16">
+               <a href="https://itch.io/post/11686279">
+                93 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                In the "About the game" section I typed about 9 months ago that I need testers for Google Play and I still need testers. (You CAN'T release a game on Google Play without 15 testers to play the game for over 14 days straight)
+               </p>
+               <p>
+                <br/>
+               </p>
+               <p>
+                How to become a tester: I need only your email to add you to the Play Console
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":4574255,"id":11687759}' id="post-11687759">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/deez12">
+               <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/deez12">
+                 deez12
+                </a>
+               </span>
+               <span class="post_date" title="2024-12-29 14:34:47">
+                <a href="https://itch.io/post/11687759">
+                 93 days ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 Oh, how should I send you my email?
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="community_post_replies">
+             <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":11688591}' id="post-11688591">
+              <div class="post_grid">
+               <div class="post_votes">
+                <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                 <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 18 12 6 22 18">
+                  </polygon>
+                 </svg>
+                </a>
+                <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                 <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 6 12 18 22 6">
+                  </polygon>
+                 </svg>
+                </a>
+               </div>
+               <a class="avatar_container" href="https://itch.io/profile/totoriel">
+                <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+                </div>
+               </a>
+               <div class="post_header">
+                <span class="post_author">
+                 <a href="https://itch.io/profile/totoriel">
+                  totoriel
+                 </a>
+                </span>
+                <span class="post_date" title="2024-12-29 16:57:05">
+                 <a href="https://itch.io/post/11688591">
+                  93 days ago
+                 </a>
+                </span>
+                <span class="vote_counts">
+                </span>
+               </div>
+               <div class="post_content">
+                <div class="post_body user_formatted" dir="auto">
+                 <p>
+                  Well if you want to play the verified version from Google Play yes, but the game is literally the same on itch and on the Play Store
+                 </p>
+                 <p>
+                  <br/>
+                 </p>
+                 <p>
+                  BTW on discord there is a channel for the emails or you can just DM me
+                 </p>
+                </div>
+                <div class="post_footer">
+                 <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                  Reply
+                 </a>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="community_post_replies">
+              <div class="community_post has_vote_column is_reply" data-post='{"user_id":4574255,"id":11689062}' id="post-11689062">
+               <div class="post_grid">
+                <div class="post_votes">
+                 <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                  <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                   <polygon points="2 18 12 6 22 18">
+                   </polygon>
+                  </svg>
+                 </a>
+                 <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                  <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                   <polygon points="2 6 12 18 22 6">
+                   </polygon>
+                  </svg>
+                 </a>
+                </div>
+                <a class="avatar_container" href="https://itch.io/profile/deez12">
+                 <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+                 </div>
+                </a>
+                <div class="post_header">
+                 <span class="post_author">
+                  <a href="https://itch.io/profile/deez12">
+                   deez12
+                  </a>
+                 </span>
+                 <span class="post_date" title="2024-12-29 18:11:45">
+                  <a href="https://itch.io/post/11689062">
+                   93 days ago
+                  </a>
+                 </span>
+                 <span class="vote_counts">
+                 </span>
+                </div>
+                <div class="post_content">
+                 <div class="post_body user_formatted" dir="auto">
+                  <p>
+                   Oh I see, thanks
+                  </p>
+                 </div>
+                 <div class="post_footer">
+                  <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                   Reply
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9144256,"id":12408958}' id="post-12408958">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/cysoulstudio">
+               <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzEzOTcyNjcxLnBuZw==/25x25%23/XydpzR.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/cysoulstudio">
+                 CySoul Studio
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-13 17:26:42">
+                <a href="https://itch.io/post/12408958">
+                 19 days ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 I would love to be a tester, I do hobby game dev so I have a bit of understanding - let me know where I can send you my email
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="community_post_replies">
+             <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":12409085}' id="post-12409085">
+              <div class="post_grid">
+               <div class="post_votes">
+                <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                 <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 18 12 6 22 18">
+                  </polygon>
+                 </svg>
+                </a>
+                <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                 <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                  <polygon points="2 6 12 18 22 6">
+                  </polygon>
+                 </svg>
+                </a>
+               </div>
+               <a class="avatar_container" href="https://itch.io/profile/totoriel">
+                <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+                </div>
+               </a>
+               <div class="post_header">
+                <span class="post_author">
+                 <a href="https://itch.io/profile/totoriel">
+                  totoriel
+                 </a>
+                </span>
+                <span class="post_date" title="2025-03-13 17:49:25">
+                 <a href="https://itch.io/post/12409085">
+                  19 days ago
+                 </a>
+                </span>
+                <span class="vote_counts">
+                </span>
+               </div>
+               <div class="post_content">
+                <div class="post_body user_formatted" dir="auto">
+                 <p>
+                  Just join the Discord you get access to sneak peeks,beta testing and suggesting features(you can still suggest here)
+                 </p>
+                </div>
+                <div class="post_footer">
+                 <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                  Reply
+                 </a>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":1736626,"id":10756493}' id="post-10756493">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/smolgame">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzEwMDI3NTU3LnBuZw==/25x25%23/l3kVBA.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/smolgame">
+               ________
+              </a>
+             </span>
+             <span class="post_date" title="2024-08-26 20:15:52">
+              <a href="https://itch.io/post/10756493">
+               217 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Overall: Actually pretty cool, I liked it.
+              </p>
+              <p>
+               Cons:
+              </p>
+              <ul>
+               <li>
+                UI was a little confusing at first.
+               </li>
+               <li>
+                Being locked into a planet, clicking all mouse btns or esc doesn’t exit lock.
+               </li>
+               <li>
+                Selecting moving planets manually, there’s no legend/menu to sel from.
+               </li>
+              </ul>
+              <p>
+               Pros:
+              </p>
+              <ul>
+               <li>
+                Everything else.
+               </li>
+              </ul>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply has_replies" data-post='{"user_id":9994594,"id":10760625}' id="post-10760625">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-08-27 10:02:27">
+               <a href="https://itch.io/post/10760625">
+                217 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                click the planet again to de-lock out of the planet also I'm working on a update about the menu (need to fix android first)
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply" data-post='{"user_id":1736626,"id":10836876}' id="post-10836876">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/smolgame">
+               <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzEwMDI3NTU3LnBuZw==/25x25%23/l3kVBA.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/smolgame">
+                 ________
+                </a>
+               </span>
+               <span class="post_date" title="2024-09-08 06:13:17">
+                <a href="https://itch.io/post/10836876">
+                 205 days ago
+                </a>
+               </span>
+               <span class="vote_counts">
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 yes, that works but is inconvenient, makes the program feel stiff instead of facilitating my intention.
+Sometimes, it’s hard to click the planet, I zoomed way out to admire the view and then got stuck until I zoomed alllllll the way back in… see what I mean… it’s not good UX ¯\
+                 <em>
+                  (ツ)
+                 </em>
+                 /¯
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":10882928,"id":10088663}' id="post-10088663">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/belixet">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4MjMwMzE1LmpwZw==/25x25%23/0Y%2Bc%2Bk.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/belixet">
+               Belixet
+              </a>
+             </span>
+             <span class="post_date" title="2024-06-09 07:51:56">
+              <a href="https://itch.io/post/10088663">
+               296 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               I think the link to the discord has expired or something
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":10089705}' id="post-10089705">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-06-09 11:55:56">
+               <a href="https://itch.io/post/10089705">
+                296 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                I fixed it
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":10560417,"id":9809374}' id="post-9809374">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/kemen1">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/kemen1">
+               Kemen1
+              </a>
+             </span>
+             <span class="post_date" title="2024-04-27 15:26:07">
+              <a href="https://itch.io/post/9809374">
+               339 days ago
+              </a>
+             </span>
+             <span class="edit_message">
+              (2 edits)
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               also make it so it can support more devices, i know this is a lot to ask but i know you can do it
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":9810900}' id="post-9810900">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-04-27 20:21:04">
+               <a href="https://itch.io/post/9810900">
+                338 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                The other device versions are on Discord
+                <span>
+                </span>
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":10560417,"id":9809334}' id="post-9809334">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/kemen1">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/kemen1">
+               Kemen1
+              </a>
+             </span>
+             <span class="post_date" title="2024-04-27 15:21:04">
+              <a href="https://itch.io/post/9809334">
+               339 days ago
+              </a>
+             </span>
+             <span class="edit_message">
+              (2 edits)
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               add more functions like a "show more" button and a automatic orbit functionality because for players that don't know how to use the y and x axis, it will be very hard for them to create a system
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":9810907}' id="post-9810907">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-04-27 20:21:44">
+               <a href="https://itch.io/post/9810907">
+                338 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                It's already in the new update that I'm working on
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":9850302}' id="post-9850302">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-05-04 12:24:20">
+               <a href="https://itch.io/post/9850302">
+                332 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                it's done
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"user_id":10558740,"id":9807915}' id="post-9807915">
+           <div class="post_anchor" id="last-post">
+           </div>
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/ijdshdcsfnhdsfhn">
+             <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/ijdshdcsfnhdsfhn">
+               Ijdshdcsfnhdsfhn
+              </a>
+             </span>
+             <span class="post_date" title="2024-04-27 10:09:11">
+              <a href="https://itch.io/post/9807915">
+               339 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               nice, but maybe fix Venus up a little
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"user_id":9994594,"id":9808430}' id="post-9808430">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/totoriel">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4OTgzNjEzLmpwZw==/25x25%23/PPbVls.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/totoriel">
+                totoriel
+               </a>
+              </span>
+              <span class="post_date" title="2024-04-27 12:22:57">
+               <a href="https://itch.io/post/9808430">
+                339 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                I will, give me a day or two because I'm making performance changes
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?return_to=https%3A%2F%2Ftotoriel.itch.io%2Fsolarsandbox&amp;intent=community">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <script id="vote_counts_tpl" type="text/template">
+           <% if (up_score > 0) { %><span class="upvotes">(+{{up_score}})</span><% } %><% if (down_score > 0) { %><span class="downvotes">(-{{down_score}})</span><% } %>
+          </script>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="right_col column">
+       <div class="video_embed">
+       </div>
+       <div class="screenshot_list">
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/original/IPlvAT.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="18983593" src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/347x500/OcuouH.png" srcset="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/347x500/OcuouH.png 1x, https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/794x1000/Nn4TV%2B.png 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5Ni5wbmc=/original/%2BGHMHq.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="18983596" src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5Ni5wbmc=/347x500/MlA4fo.png" srcset="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5Ni5wbmc=/347x500/MlA4fo.png 1x, https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5Ni5wbmc=/794x1000/APdpS%2B.png 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU1NC5wbmc=/original/74vyip.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="18983554" src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU1NC5wbmc=/347x500/t8iuQx.png" srcset="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU1NC5wbmc=/347x500/t8iuQx.png 1x, https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU1NC5wbmc=/794x1000/MgqrE3.png 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU2NS5wbmc=/original/ZMZn5m.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="18983565" src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU2NS5wbmc=/347x500/PGc%2B2k.png" srcset="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU2NS5wbmc=/347x500/PGc%2B2k.png 1x, https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU2NS5wbmc=/794x1000/i1Edz5.png 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU4My5wbmc=/original/k%2BD3cG.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="18983583" src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU4My5wbmc=/347x500/Y1ZJBj.png" srcset="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU4My5wbmc=/347x500/Y1ZJBj.png 1x, https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU4My5wbmc=/794x1000/7ZOBjq.png 2x"/>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="footer" id="view_game_footer">
+     <a class="icon_logo" href="https://itch.io/">
+      <svg aria-hidden="" class="svgicon icon_itchio_new" height="17" role="img" version="1.1" viewbox="0 0 262.728 235.452" width="20">
+       <path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z">
+       </path>
+      </svg>
+     </a>
+     <a href="https://itch.io/">
+      itch.io
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a href="https://totoriel.itch.io">
+      View all by totoriel
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a class="report_game_btn" data-lightbox_url="https://totoriel.itch.io/solarsandbox/report" href="javascript:void(0);">
+      Report
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a class="embed_game_btn" data-lightbox_url="https://totoriel.itch.io/solarsandbox/embed" href="javascript:void(0);">
+      Embed
+     </a>
+     <span class="dot last_dot">
+      ·
+     </span>
+     <div class="update_timestamp">
+      Updated
+      <abbr title="28 March 2025 @ 21:40 UTC">
+       3 days ago
+      </abbr>
+     </div>
+     <div class="breadcrumbs">
+      <a href="https://itch.io/games">
+       Games
+      </a>
+      ›
+      <a href="https://itch.io/games/genre-simulation">
+       Simulation
+      </a>
+      ›
+      <a href="https://itch.io/games/free">
+       Free
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   I.setup_layout()
+  </script>
+  <script id="loading_lightbox_tpl" type="text/template">
+   <div aria-live="polite" class="lightbox loading_lightbox"><div class="loader_outer"><div class="loader_label">Loading</div><div class="loader_bar"><div class="loader_bar_slider"></div></div></div></div>
+  </script>
+  <script type="text/javascript">
+   init_HtmlEmbed('#html_embed_5078573', {"height":720,"start_maximized":false,"orientation":"landscape","popup_url":"https:\/\/itch.io\/embed-upload\/13206384?color=333333&uuid=900ac68c9352a7d77b94d8765253dc8b","width":1280});new I.CommunityViewTopic('#community_topic_posts_7347004', {"report_url":"https:\/\/itch.io\/post\/:post_id\/report"});init_ViewHtmlGame('#view_html_game_656017', {"game":{"id":2533752,"slug":"solarsandbox","type":5,"actual_price":0,"hit_url":"https:\/\/totoriel.itch.io\/solarsandbox\/rh\/eyJpZCI6MjUzMzc1MiwiZSI6MTc0MzUzMzI5OX0%3d%2ey7hT0ED7oEpUNPDc8XlJbk6SQhc%3d","play_url":"https:\/\/totoriel.itch.io\/solarsandbox\/rp\/eyJybiI6NTAwNDAsImlkIjoyNTMzNzUyLCJtIjoxNzQzNTMzMzc0LCJlIjoxNzQzNTMzNDM0fQ%3d%3d%2eBUT9Gw7%2bR1HSefehUQCw5q1cVwQ%3d","play_after":90,"type_name":"html","min_price":0},"generate_download_url":"https:\/\/totoriel.itch.io\/solarsandbox\/download_url"});new I.GameGoalBanner('#goal_banner_5849692');
+I.setup_page();
+  </script>
+ </body>
+</html>

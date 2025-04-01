@@ -1,0 +1,70 @@
+{
+    "game_id": 78629,
+    "title": "Hardware Tycoon",
+    "url": "https://haxor1337.itch.io/hardware-tycoon",
+    "cover_url": "https://img.itch.zone/aW1hZ2UvNzg2MjkvMzc4NDk3LnBuZw==/original/9NRGWa.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvNzg2MjkvNjU5NzUzOC5wbmc=/original/b8f0IU.png",
+        "https://img.itch.zone/aW1hZ2UvNzg2MjkvNzc0MDY5OC5wbmc=/original/zZTIV4.png",
+        "https://img.itch.zone/aW1hZ2UvNzg2MjkvNjU5NzUzNi5wbmc=/original/gQYxJf.png",
+        "https://img.itch.zone/aW1hZ2UvNzg2MjkvNzc0MDY5OS5wbmc=/original/q8kEsP.png",
+        "https://img.itch.zone/aW1hZ2UvNzg2MjkvNjU5NzUzNy5wbmc=/original/QHJRyn.png"
+    ],
+    "description": "Design and sell hardware to outdo the competition in this free tycoon!",
+    "author": "hi",
+    "author_url": "https://haxor1337.itch.io",
+    "extra": {
+        "status": "Canceled",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS",
+            "Linux"
+        ],
+        "genre": {
+            "Strategy": "https://itch.io/games/genre-strategy",
+            "Simulation": "https://itch.io/games/genre-simulation"
+        },
+        "tools": {
+            "Construct": "https://itch.io/games/made-with-construct",
+            "Adobe Photoshop": "https://itch.io/games/made-with-photoshop",
+            "Adobe Illustrator": "https://itch.io/games/made-with-adobe-illustrator"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Casual": "https://itch.io/games/tag-casual",
+            "hardware": "https://itch.io/games/tag-hardware",
+            "html": "https://itch.io/games/tag-html",
+            "Management": "https://itch.io/games/tag-management",
+            "Moddable": "https://itch.io/games/tag-moddable",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Tycoon": "https://itch.io/games/tag-tycoon",
+            "upgrades": "https://itch.io/games/tag-upgrades"
+        },
+        "length": "About a half-hour",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Keyboard": "https://itch.io/games/input-keyboard",
+            "Mouse": "https://itch.io/games/input-mouse"
+        },
+        "accessibility": {
+            "Subtitles": "https://itch.io/games/accessibility-subtitles"
+        },
+        "links": {
+            "Homepage": "https://ht.poggers.ltd",
+            "Wiki": "http://hardware-tycoon.wikia.com/wiki/Hardware_Tycoon_Wiki",
+            "Discord": "https://discord.gg/ssRTkqz",
+            "F.A.Q.": "https://itch.io/t/210226/frequently-asked-questions",
+            "ModDB": "https://www.moddb.com/games/hardware-tycoon",
+            "GameJolt": "https://gamejolt.com/games/hardware-tycoon/47494"
+        }
+    },
+    "rating": {
+        "average": 4.5,
+        "votes": 790
+    },
+    "errors": [],
+    "external_downloads": []
+}

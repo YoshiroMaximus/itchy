@@ -1,0 +1,3237 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <meta content="https://img.itch.zone/aW1nLzEyMjIxMjAwLmdpZg==/original/iTOgtd.gif" property="og:image"/>
+  <link href="https://img.itch.zone/aW1nLzY1MTU4NjMucG5n/32x32%23/4T1zgm.png" rel="icon" type="image/png"/>
+  <meta content="itch.io" property="og:site_name"/>
+  <meta content="4503599627724030" property="twitter:account_id"/>
+  <meta content="a slice-of-death adventure" property="og:description"/>
+  <meta content="a slice-of-death adventure" name="description"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="games/1116350" name="itch:path"/>
+  <link href="https://nivrad00.itch.io/purrgatory/devlog.rss" rel="alternate" title="purrgatory Devlog" type="application/rss+xml"/>
+  <meta content="@itchio" name="twitter:site"/>
+  <meta content="purrgatory by Niv 🦌" name="twitter:title"/>
+  <meta content="a slice-of-death adventure. Play in your browser" name="twitter:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://img.itch.zone/aW1nLzEyMjIxMjAwLmdpZg==/508x254%23mb/du3VJH.gif" property="twitter:image"/>
+  <meta content="@nivrad00" property="twitter:creator"/>
+  <meta content="https://nivrad00.itch.io/purrgatory" name="twitter:url"/>
+  <script type="application/ld+json">
+   {"itemListElement":[{"item":{"name":"Games","@id":"https:\/\/itch.io\/games"},"@type":"ListItem","position":1},{"item":{"name":"Visual Novel","@id":"https:\/\/itch.io\/games\/genre-visual-novel"},"@type":"ListItem","position":2},{"item":{"name":"Free","@id":"https:\/\/itch.io\/games\/free"},"@type":"ListItem","position":3}],"@type":"BreadcrumbList","@context":"http:\/\/schema.org"}
+  </script>
+  <script type="application/ld+json">
+   {"aggregateRating":{"ratingCount":1127,"@type":"AggregateRating","ratingValue":"4.9"},"@context":"http:\/\/schema.org\/","name":"purrgatory","@type":"Product","description":"a slice-of-death adventure"}
+  </script>
+  <title>
+   purrgatory by Niv 🦌
+  </title>
+  <meta name="csrf_token" value="WyJmaDZkIiwxNzQzNTMyNjY3LCJPODJBajJ5dWZPVTZHR1oiXQ==.Fvij6a6gBUJj4NOM1JWd3R3paLE="/>
+  <link href="https://static.itch.io/game.css?1743210765" rel="stylesheet"/>
+  <script type="text/javascript">
+   window.itchio_translations_url = 'https://static.itch.io/translations';
+  </script>
+  <script src="https://static.itch.io/lib.min.js?1743210765" type="text/javascript">
+  </script>
+  <script src="https://static.itch.io/bundle.min.js?1743210765" type="text/javascript">
+  </script>
+  <script src="https://static.itch.io/lib/jquery.maskMoney.js" type="text/javascript">
+  </script>
+  <script data-src="https://static.itch.io/react.min.js?1743210765" id="lib_react_src">
+  </script>
+  <script src="https://static.itch.io/game.min.js?1743210765" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   I.current_user = null;I.subdomain = true;
+  </script>
+  <script type="text/javascript">
+   if (!window.location.hostname.match(/localhost/)) {      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', "G-36R7NPBMLS", {});
+      (function(d, t, s, m) {
+        s = d.createElement(t);
+        s.src = "https:\/\/www.googletagmanager.com\/gtag\/js?id=G-36R7NPBMLS";
+        s.async = 1;
+        m = d.getElementsByTagName(t)[0];
+        m.parentNode.insertBefore(s, m);
+      })(document, "script");
+      }
+  </script>
+  <style id="game_theme" type="text/css">
+   :root{--itchio_ui_bg: #5b5b5b;--itchio_ui_bg_dark: #555555}.wrapper{--itchio_font_family: Lato;--itchio_bg_color: #ffffff;--itchio_bg2_color: rgba(255, 255, 255, 1);--itchio_bg2_sub: #e5e5e5;--itchio_text_color: #222222;--itchio_link_color: #594f81;--itchio_border_color: #d8d8d8;--itchio_button_color: #594f81;--itchio_button_fg_color: #ffffff;--itchio_button_shadow_color: #72689a;background-color:#ffffff;/*! */ background-image: url(https://img.itch.zone/aW1nLzY1MTYxMTAucG5n/original/gtTn%2Fd.png);;background-repeat: repeat-y;background-position: 50% 0; /* */}.inner_column{color:#222222;font-family:Lato,Lato,LatoExtended,sans-serif;background-color:rgba(255, 255, 255, 1)}.inner_column ::selection{color:#ffffff;background:#594f81}.inner_column ::-moz-selection{color:#ffffff;background:#594f81}.inner_column h1,.inner_column h2,.inner_column h3,.inner_column h4,.inner_column h5,.inner_column h6{font-family:inherit;font-weight:900;color:inherit}.inner_column a,.inner_column .footer a{color:#594f81}.inner_column .button,.inner_column .button:hover,.inner_column .button:active{background-color:#594f81;color:#ffffff;text-shadow:0 1px 0px #72689a}.inner_column hr{background-color:#d8d8d8}.inner_column table{border-color:#d8d8d8}.inner_column .redactor-box .redactor-toolbar li a{color:#594f81}.inner_column .redactor-box .redactor-toolbar li a:hover,.inner_column .redactor-box .redactor-toolbar li a:active,.inner_column .redactor-box .redactor-toolbar li a.redactor-act{background-color:#594f81 !important;color:#ffffff !important;text-shadow:0 1px 0px #72689a !important}.inner_column .redactor-box .redactor-toolbar .re-button-tooltip{text-shadow:none}.game_frame{background:#e5e5e5;/*! */  /* */}.game_frame .embed_info{background-color:rgba(255, 255, 255, 0.85)}.game_loading .loader_bar .loader_bar_slider{background-color:#594f81}.view_game_page .reward_row,.view_game_page .bundle_row{border-color:#e5e5e5 !important}.view_game_page .game_info_panel_widget{background:rgba(229, 229, 229, 1)}.view_game_page .star_value .star_fill{color:#594f81}.view_game_page .rewards .quantity_input{background:rgba(255, 255, 255, 1);border-color:rgba(34, 34, 34, 0.5);color:#222222}.view_game_page .right_col{display:block}.game_devlog_page li .meta_row .post_likes{border-color:#e5e5e5}.game_devlog_post_page .post_like_button{box-shadow:inset 0 0 0 1px #d8d8d8}.game_comments_widget .community_post .post_footer a,.game_comments_widget .community_post .post_footer .vote_btn,.game_comments_widget .community_post .post_header .post_date a,.game_comments_widget .community_post .post_header .edit_message{color:rgba(34, 34, 34, 0.5)}.game_comments_widget .community_post .reveal_full_post_btn{background:linear-gradient(to bottom, transparent, #ffffff 50%, #ffffff);color:#594f81}.game_comments_widget .community_post .post_votes{border-color:rgba(34, 34, 34, 0.2)}.game_comments_widget .community_post .post_votes .vote_btn:hover{background:rgba(34, 34, 34, 0.05)}.game_comments_widget .community_post .post_footer .vote_btn{border-color:rgba(34, 34, 34, 0.5)}.game_comments_widget .community_post .post_footer .vote_btn span{color:inherit}.game_comments_widget .community_post .post_footer .vote_btn:hover,.game_comments_widget .community_post .post_footer .vote_btn.voted{background-color:#594f81;color:#ffffff;text-shadow:0 1px 0px #72689a;border-color:#594f81}.game_comments_widget .form .redactor-box,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget{border-color:rgba(34, 34, 34, 0.5);background:transparent}.game_comments_widget .form .redactor-layer,.game_comments_widget .form .redactor-toolbar,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget{background:rgba(255, 255, 255, 1)}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button{color:inherit;opacity:0.6}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active{opacity:1;background-color:#594f81 !important;color:#ffffff !important;text-shadow:0 1px 0px #72689a !important}.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,.game_comments_widget .form .forms_markdown_input_widget li{border-color:rgba(34, 34, 34, 0.5)}.game_comments_widget .form textarea{border-color:rgba(34, 34, 34, 0.5);background:rgba(255, 255, 255, 1);color:inherit}.game_comments_widget .form .redactor-toolbar{border-color:rgba(34, 34, 34, 0.5)}.game_comments_widget .hint{color:rgba(34, 34, 34, 0.5)}.game_community_preview_widget .community_topic_row .topic_tag{background-color:#e5e5e5}.footer .svgicon,.view_game_page .more_information_toggle .svgicon{fill:#222222 !important}
+  </style>
+ </head>
+ <body class="embedded_game locale_en game_layout_widget layout_widget no_theme_toggle responsive" data-host="itch.io" data-page_name="view_game">
+  <ul class="user_tools hidden" id="user_tools">
+   <li>
+    <a class="action_btn view_more" href="https://nivrad00.itch.io">
+     <svg aria-hidden="" class="svgicon icon_itchio_new" height="16" role="img" version="1.1" viewbox="0 0 262.728 235.452" width="18">
+      <path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z">
+      </path>
+     </svg>
+     <span class="full_label">
+      View all by Niv 🦌
+     </span>
+     <span class="mobile_label">
+      Niv 🦌
+     </span>
+    </a>
+   </li>
+   <li>
+    <a class="follow_user_btn action_btn" data-follow_url="https://nivrad00.itch.io/-/follow?source=game" data-register_action="follow_user" data-unfollow_url="https://nivrad00.itch.io/-/unfollow?source=game" data-user_id="1545267" href="https://itch.io/login?intent=follow_user&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+     <svg aria-hidden="" class="svgicon icon_user_plus on_follow" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+      </path>
+      <circle cx="8.5" cy="7" r="4">
+      </circle>
+      <line x1="20" x2="20" y1="8" y2="14">
+      </line>
+      <line x1="23" x2="17" y1="11" y2="11">
+      </line>
+     </svg>
+     <svg aria-hidden="" class="svgicon icon_user_check on_unfollow" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+      </path>
+      <circle cx="8.5" cy="7" r="4">
+      </circle>
+      <polyline points="17 11 19 13 23 9">
+      </polyline>
+     </svg>
+     <span class="on_follow">
+      <span class="full_label">
+       Follow Niv 🦌
+      </span>
+      <span class="mobile_label">
+       Follow
+      </span>
+     </span>
+     <span class="on_unfollow">
+      <span class="full_label">
+       Following Niv 🦌
+      </span>
+      <span class="mobile_label">
+       Following
+      </span>
+     </span>
+    </a>
+   </li>
+   <li>
+    <a class="action_btn add_to_collection_btn" href="https://itch.io/login?intent=add_to_collection&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+     <svg aria-hidden="" class="svgicon icon_collection_add2" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M 1,6 H 14">
+      </path>
+      <path d="M 1,11 H 14">
+      </path>
+      <path d="m 1,16 h 9">
+      </path>
+      <path d="M 18,11 V 21">
+      </path>
+      <path d="M 13,16 H 23">
+      </path>
+     </svg>
+     <span class="full_label">
+      Add To Collection
+     </span>
+     <span class="mobile_label">
+      Collection
+     </span>
+    </a>
+   </li>
+   <li class="community_link">
+    <a class="action_btn" href="https://nivrad00.itch.io/purrgatory#comments">
+     <svg aria-hidden="" class="svgicon icon_comment" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+      </path>
+     </svg>
+     Comments
+    </a>
+   </li>
+   <li class="devlog_link">
+    <a class="action_btn" href="https://nivrad00.itch.io/purrgatory/devlog">
+     <svg aria-hidden="" class="svgicon icon_news" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <rect height="18" rx="2" ry="2" width="22" x="1" y="3">
+      </rect>
+      <line x1="6" x2="18" y1="8" y2="8">
+      </line>
+      <line x1="6" x2="18" y1="12" y2="12">
+      </line>
+      <line x1="6" x2="18" y1="16" y2="16">
+      </line>
+     </svg>
+     Devlog
+    </a>
+   </li>
+   <li class="jam_entry">
+    <a class="action_btn" href="https://itch.io/jam/queer-games-bundle-2022/rate/1116350">
+     <svg aria-hidden="" class="svgicon icon_award" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <circle cx="12" cy="8" r="7">
+      </circle>
+      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88">
+      </polyline>
+     </svg>
+     Submission to Queer Games Bundle 2022
+    </a>
+   </li>
+   <li>
+    <a class="action_btn related_games_btn" data-label="related_btn" href="https://itch.io/games-like/1116350/purrgatory" target="_blank">
+     <svg aria-hidden="" class="svgicon icon_map" fill="none" height="18" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="18">
+      <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6">
+      </polygon>
+      <line x1="8" x2="8" y1="2" y2="18">
+      </line>
+      <line x1="16" x2="16" y1="6" y2="22">
+      </line>
+     </svg>
+     <span class="full_label">
+      Related games
+     </span>
+     <span class="mobile_label">
+      Related
+     </span>
+    </a>
+   </li>
+  </ul>
+  <script type="text/javascript">
+   new I.GameUserTools('#user_tools')
+  </script>
+  <div class="main wrapper" id="wrapper">
+   <div class="inner_column size_large family_source-sans-pro" id="inner_column">
+    <div class="header" id="header">
+     <h1 class="game_title" itemprop="name">
+      purrgatory
+     </h1>
+    </div>
+    <div class="view_html_game_page view_game_page page_widget base_widget buy_on_top ready" id="view_html_game_1398528">
+     <div class="html_embed_widget base_widget embed_wrapper" id="html_embed_7192871">
+      <div class="game_frame game_pending" data-height="720" data-width="1280" style="width: 1280px; height: 720px">
+       <button class="fullscreen_btn" title="Enter fullscreen">
+        <img src="https://itch.io/static/images/enlarge.svg?1743210765"/>
+       </button>
+       <div class="iframe_placeholder" data-iframe='&lt;iframe allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" frameborder="0" allowfullscreen="true" scrolling="no" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" src="https://html-classic.itch.zone/html/12573370/purrgatory - web/index.html" id="game_drop"&gt;&lt;/iframe&gt;'>
+        <button class="button load_iframe_btn">
+         <svg aria-hidden="" class="svgicon icon_play" fill="none" height="24" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="24">
+          <circle cx="12" cy="12" r="10">
+          </circle>
+          <polygon points="10 8 16 12 10 16 10 8">
+          </polygon>
+         </svg>
+         Run game
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="donate">
+      <a class="button donate_btn" data-donate="false" href="https://nivrad00.itch.io/purrgatory/purchase">
+       Download Now
+      </a>
+     </div>
+     <div class="columns">
+      <div class="left_col column">
+       <div class="formatted_description user_formatted">
+        <p>
+         purrgatory is a visual novel about passing time in an afterlife where nothing really matters. explore a whimsical point-and-click world, befriend seven charming characters, and remember — furever's not so bad!
+        </p>
+        <p>
+         winner of the "i can't draw" game jam and featured in the museum of pop culture in seattle, washington!
+         <span>
+         </span>
+        </p>
+        <p>
+         <strong>
+          links
+         </strong>
+        </p>
+        <ul>
+         <li>
+          follow purrgatory on
+          <a href="https://twitter.com/purrgatorygame" referrerpolicy="origin" rel="nofollow noopener">
+           twitter
+          </a>
+         </li>
+         <li>
+          listen to the
+          <a href="https://nivrad00.bandcamp.com/album/purrgatory-ost" referrerpolicy="origin" rel="nofollow noopener">
+           purrgatory ost
+          </a>
+         </li>
+         <li>
+          stuck? check out the
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/277657/stuck-hints-solutions">
+           hints and solutions
+          </a>
+         </li>
+        </ul>
+        <p>
+         <strong>
+          now available in the following languages!
+         </strong>
+        </p>
+        <ul>
+         <li>
+          european spanish (by
+          <a href="https://twitter.com/Samutoga" referrerpolicy="origin" rel="nofollow noopener">
+           @samutoga
+          </a>
+          . donate to him
+          <a href="https://www.paypal.com/donate/?hosted_button_id=CHJ66WC57MJ2A" referrerpolicy="origin" rel="nofollow noopener">
+           here
+          </a>
+          !)
+         </li>
+         <li>
+          simplified chinese (by
+          <a href="https://twitter.com/Sykrry" referrerpolicy="origin" rel="nofollow noopener">
+           @Sykrry
+          </a>
+          )
+         </li>
+         <li>
+          italian
+         </li>
+         <li>
+          polish
+         </li>
+         <li>
+          brazilian portuguese
+         </li>
+         <li>
+          latin american spanish
+         </li>
+        </ul>
+        <p>
+         <strong>
+          want to donate?
+         </strong>
+         click "download now" above and you'll be given an option to pay.
+        </p>
+        <p>
+         <strong>
+          web problems?
+         </strong>
+         if the game won't start, try refreshing or using a different browser. for higher quality and smoother gameplay, try the windows version below.
+        </p>
+        <p class="text-center">
+         <img loading="lazy" src="https://img.itch.zone/aW1nLzY1MjEyMDAuZ2lm/original/NXWEfi.gif"/>
+        </p>
+       </div>
+       <div class="more_information_toggle">
+        <div class="toggle_row">
+         <a class="toggle_info_btn" href="javascript:void(0)">
+          More information
+          <svg aria-hidden="" class="svgicon icon_down_tick" height="6" role="img" version="1.1" viewbox="0 0 37 20" width="12">
+           <path d="m2.0858 0c-1.1535 0-2.0858 0.86469-2.0858 1.9331 0 0.5139 0.21354 1.0183 0.38704 1.1881l18.113 16.879 18.112-16.879c0.174-0.1696 0.388-0.674 0.388-1.1879 0-1.0684-0.932-1.9331-2.086-1.9331-0.577 0-1.111 0.23008-1.49 0.57992l-14.924 13.894-14.925-13.893c-0.3777-0.34998-0.9134-0.581-1.4902-0.581z">
+           </path>
+          </svg>
+         </a>
+        </div>
+        <div class="info_panel_wrapper">
+         <div class="game_info_panel_widget base_widget" id="game_info_panel_4115549">
+          <table>
+           <tbody>
+            <tr>
+             <td>
+              Status
+             </td>
+             <td>
+              <a href="https://itch.io/games/released">
+               Released
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Platforms
+             </td>
+             <td>
+              <a href="https://itch.io/games/html5">
+               HTML5
+              </a>
+              ,
+              <a href="https://itch.io/games/platform-windows">
+               Windows
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Rating
+             </td>
+             <td>
+              <div class="aggregate_rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" title="4.9">
+               <div class="star_value" content="4.9" itemprop="ratingValue">
+                <span class="screenreader_only">
+                 Rated 4.9 out of 5 stars
+                </span>
+                <div class="star_fill" style="width: 98.04791%">
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star">
+                 </span>
+                </div>
+                <div class="star_holes">
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                 <span aria-hidden="true" class="star icon-star2">
+                 </span>
+                </div>
+               </div>
+               <span class="rating_count" content="1127" itemprop="ratingCount">
+                (1,127
+                <span class="screenreader_only">
+                 total ratings
+                </span>
+                )
+               </span>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Author
+             </td>
+             <td>
+              <a href="https://nivrad00.itch.io">
+               Niv 🦌
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Genre
+             </td>
+             <td>
+              <a href="https://itch.io/games/genre-visual-novel">
+               Visual Novel
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Made with
+             </td>
+             <td>
+              <a href="https://itch.io/games/made-with-godot">
+               Godot
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Tags
+             </td>
+             <td>
+              <a href="https://itch.io/games/tag-cats">
+               Cats
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-cute">
+               Cute
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-funny">
+               Funny
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-furry">
+               Furry
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-hand-drawn">
+               Hand-drawn
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-lgbt">
+               LGBT
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-pixel-art">
+               Pixel Art
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-point-and-click">
+               Point &amp; Click
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-slice-of-life">
+               Slice Of Life
+              </a>
+              ,
+              <a href="https://itch.io/games/tag-story-rich">
+               Story Rich
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Average session
+             </td>
+             <td>
+              <a href="https://itch.io/games/duration-hours">
+               A few hours
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Languages
+             </td>
+             <td>
+              <a href="https://itch.io/games/lang-en">
+               English
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-es">
+               Spanish; Castilian
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-es-419">
+               Spanish; Latin America
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-it">
+               Italian
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-pl">
+               Polish
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-pt-BR">
+               Portuguese (Brazil)
+              </a>
+              ,
+              <a href="https://itch.io/games/lang-zh_Hans">
+               Chinese (Simplified)
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Inputs
+             </td>
+             <td>
+              <a href="https://itch.io/games/input-keyboard">
+               Keyboard
+              </a>
+              ,
+              <a href="https://itch.io/games/input-mouse">
+               Mouse
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Accessibility
+             </td>
+             <td>
+              <a href="https://itch.io/games/accessibility-colorblind">
+               Color-blind friendly
+              </a>
+              ,
+              <a href="https://itch.io/games/accessibility-highcontrast">
+               High-contrast
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Links
+             </td>
+             <td>
+              <a href="https://store.steampowered.com/app/1713610/Purrgatory/" rel="nofollow noopener">
+               Steam
+              </a>
+              ,
+              <a href="https://twitter.com/purrgatorygame" rel="nofollow noopener">
+               Twitter/X
+              </a>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+       <h2 id="download">
+        Download
+       </h2>
+       <div class="buy_row">
+        <div class="button_message">
+         <a class="button buy_btn" href="https://nivrad00.itch.io/purrgatory/purchase">
+          Download Now
+         </a>
+         <span class="buy_message">
+          <span class="sub">
+           Name your own price
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="uploads">
+        <p>
+         Click download now to get access to the following files:
+        </p>
+        <div class="upload_list_widget base_widget" id="upload_list_2617595">
+         <div class="upload">
+          <div class="info_column">
+           <div class="upload_name">
+            <strong class="name" title="purrgatory - windows.zip">
+             purrgatory - windows.zip
+            </strong>
+            <span class="file_size">
+             <span>
+              127 MB
+             </span>
+            </span>
+            <span class="download_platforms">
+             <span aria-hidden="true" class="icon icon-windows8" title="Download for Windows">
+             </span>
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <section class="game_devlog" id="devlog">
+        <h2>
+         Development log
+        </h2>
+        <ul>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/867623/purrgatory-in-italian-polish-brazilian-portuguese-and-latin-american-spanish">
+           purrgatory in italian, polish, brazilian portuguese, and latin american spanish!
+          </a>
+          <div class="post_date">
+           <abbr title="12 January 2025 @ 23:52 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            78 days ago
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/562444/help-translate-purrgatory">
+           help translate purrgatory!
+          </a>
+          <div class="post_date">
+           <abbr title="19 July 2023 @ 08:18 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Jul 19, 2023
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/533141/purrgatory">
+           喵的炼狱/purrgatory现已支持简体中文!
+          </a>
+          <div class="post_date">
+           <abbr title="20 May 2023 @ 00:38 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            May 20, 2023
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/399193/purrgatory-en-espaol">
+           ¡purrgatory en español!
+          </a>
+          <div class="post_date">
+           <abbr title="04 July 2022 @ 16:35 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Jul 04, 2022
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/303454/2021-10-12-small-bug-fix">
+           2021-10-12 small bug fix
+          </a>
+          <div class="post_date">
+           <abbr title="13 October 2021 @ 04:01 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Oct 13, 2021
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/293435/2021-9-10-bug-fixes-quality-of-life-changes">
+           2021-9-10 bug fixes + quality of life changes
+          </a>
+          <div class="post_date">
+           <abbr title="12 September 2021 @ 03:34 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Sep 12, 2021
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/281315/purrgatory-on-steam">
+           purrgatory on steam!
+          </a>
+          <div class="post_date">
+           <abbr title="07 August 2021 @ 05:09 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Aug 07, 2021
+           </abbr>
+          </div>
+         </li>
+         <li>
+          <a href="https://nivrad00.itch.io/purrgatory/devlog/280034/2021-8-2-bug-fixes">
+           2021-8-2 bug fixes
+          </a>
+          <div class="post_date">
+           <abbr title="02 August 2021 @ 20:48 UTC">
+            <span aria-hidden="true" class="icon icon-stopwatch">
+            </span>
+            Aug 02, 2021
+           </abbr>
+          </div>
+         </li>
+        </ul>
+        <p>
+         <a class="forward_link" href="https://nivrad00.itch.io/purrgatory/devlog">
+          View all posts
+         </a>
+        </p>
+       </section>
+       <div class="game_comments_widget base_widget" id="game_comments_642828">
+        <h2 id="comments">
+         Comments
+        </h2>
+        <p class="form_placeholder">
+         <a data-register_action="comment" href="https://itch.io/login?return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+          Log in with itch.io
+         </a>
+         to leave a comment.
+        </p>
+        <div class="community_topic_posts_widget base_widget" id="community_topic_posts_8787336">
+         <div class="topic_pager">
+          <span class="page_label">
+           Viewing most recent comments
+           <nobr>
+            <span>
+             1
+            </span>
+            to
+            <span>
+             40
+            </span>
+            of 716
+           </nobr>
+          </span>
+          ·
+          <a class="page_link" href="https://nivrad00.itch.io/purrgatory/comments?before=677">
+           Next page
+          </a>
+          ·
+          <a class="page_link" href="https://nivrad00.itch.io/purrgatory/comments?after=0">
+           Last page
+          </a>
+         </div>
+         <div class="community_post_list_widget base_widget" id="community_post_list_1480931">
+          <div class="community_post has_vote_column" data-post='{"id":12537957,"user_id":7514095}' id="post-12537957">
+           <div class="post_anchor" id="first-post">
+           </div>
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/wayofkris97">
+             <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/wayofkris97">
+               WayOfKris97
+              </a>
+             </span>
+             <span class="post_date" title="2025-04-01 03:31:54">
+              <a href="https://itch.io/post/12537957">
+               15 hours ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Bro it took me FOREVER to get the library snowglobe, but this game has certainly earned a special place in my heart (or lack thereof).
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12536253,"user_id":12337807}' id="post-12536253">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/blackcat2011">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/blackcat2011">
+               BlackCat2011
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-31 21:54:54">
+              <a href="https://itch.io/post/12536253">
+               20 hours ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               if you need help with the phone number of lucifer just look at the actually numbers they have letters on them type out lucifer's name using the corresponding numbers
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12523421,"user_id":6832790}' id="post-12523421">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/fizzing">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4NjU5NTg1LmpwZw==/25x25%23/98Wp%2B8.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/fizzing">
+               fizzing
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-30 05:56:37">
+              <a href="https://itch.io/post/12523421">
+               2 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               ended too soon
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12523277,"user_id":12610430}' id="post-12523277">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/mushroomkittycats">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwNDgzOTk4LmpwZw==/25x25%23/ZlvuHC.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/mushroomkittycats">
+               mushroomkittycats
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-30 05:21:40">
+              <a href="https://itch.io/post/12523277">
+               2 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i just finished and.....................................i saved one person
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"id":12514020,"user_id":13190543}' id="post-12514020">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/im5ku11onyt">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/im5ku11onyt">
+               Im5ku11OnYT
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-28 21:17:13">
+              <a href="https://itch.io/post/12514020">
+               3 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               100% the game (i think) and this is the best point and click game i've played in years, better than mushroom age for sure! keep up the good work (maybe a deluxe version, maybe) (please)
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column has_replies is_reply" data-post='{"id":12523269,"user_id":12610430}' id="post-12523269">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/mushroomkittycats">
+              <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwNDgzOTk4LmpwZw==/25x25%23/ZlvuHC.jpg)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/mushroomkittycats">
+                mushroomkittycats
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-30 05:20:17">
+               <a href="https://itch.io/post/12523269">
+                2 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+               <span class="upvotes">
+                (+1)
+               </span>
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                we need more purrgatory!!!!!
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="community_post_replies">
+            <div class="community_post has_vote_column is_reply" data-post='{"id":12529412,"user_id":13190543}' id="post-12529412">
+             <div class="post_grid">
+              <div class="post_votes">
+               <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+                <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 18 12 6 22 18">
+                 </polygon>
+                </svg>
+               </a>
+               <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+                <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                 <polygon points="2 6 12 18 22 6">
+                 </polygon>
+                </svg>
+               </a>
+              </div>
+              <a class="avatar_container" href="https://itch.io/profile/im5ku11onyt">
+               <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+               </div>
+              </a>
+              <div class="post_header">
+               <span class="post_author">
+                <a href="https://itch.io/profile/im5ku11onyt">
+                 Im5ku11OnYT
+                </a>
+               </span>
+               <span class="post_date" title="2025-03-31 00:25:58">
+                <a href="https://itch.io/post/12529412">
+                 1 day ago
+                </a>
+               </span>
+               <span class="vote_counts">
+                <span class="upvotes">
+                 (+1)
+                </span>
+               </span>
+              </div>
+              <div class="post_content">
+               <div class="post_body user_formatted" dir="auto">
+                <p>
+                 yesss
+                </p>
+               </div>
+               <div class="post_footer">
+                <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                 Reply
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12507262,"user_id":13184272}' id="post-12507262">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/i-love-yandere">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/i-love-yandere">
+               i love yandere
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-27 19:18:48">
+              <a href="https://itch.io/post/12507262">
+               4 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               It's a wonderful novel, but I really need the Russian language... I wish all the best to the author in his future projects. He's really good
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"id":12499310,"user_id":13174828}' id="post-12499310">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/dumrat3">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/dumrat3">
+               dummy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-26 13:24:56">
+              <a href="https://itch.io/post/12499310">
+               6 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               why cant i call lucifer i try 555 its doesnt work pls help
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"id":12500276,"user_id":13174828}' id="post-12500276">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/dumrat3">
+              <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/dumrat3">
+                dummy
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-26 16:45:45">
+               <a href="https://itch.io/post/12500276">
+                6 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+               <span class="upvotes">
+                (+1)
+               </span>
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                i beat the game
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12491335,"user_id":6237584}' id="post-12491335">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/glittertube">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwNDE5NTg5LmpwZw==/25x25%23/th8NcO.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/glittertube">
+               winnie
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-25 09:09:33">
+              <a href="https://itch.io/post/12491335">
+               7 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               anytime i'm going through it or spiraling, i come back and replay this game. to me, it feels like that one time in high school when i was having a very bad day and all of my friends group hugged me. this game feels like a group hug from everyone that loves you.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12490749,"user_id":12012696}' id="post-12490749">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/nocturnalcoffee768">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMDI0MTgxLnBuZw==/25x25%23/a9Rz1u.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/nocturnalcoffee768">
+               nocturnalcoffee768
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-25 06:20:23">
+              <a href="https://itch.io/post/12490749">
+               7 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+              </p>
+              <div>
+               <button aria-label="Click to activate YouTube embed" class="embed_preload youtube_preload" data-embed_code='&lt;iframe width="500" height="281" src="//www.youtube.com/embed/UCC202VP8pU" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;' itchio="" style="width: 250px; height: 140px; background: url(https://i.ytimg.com/vi/UCC202VP8pU/hqdefault.jpg) 50% 50% no-repeat; background-size: cover" type="button">
+               </button>
+              </div>
+              very fun! will continue playing
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"id":12488492,"user_id":13163321}' id="post-12488492">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/broodjekip-1">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/broodjekip-1">
+               Broodjekip_1
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-24 23:25:21">
+              <a href="https://itch.io/post/12488492">
+               7 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Hear me out: natalie
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"id":12488500,"user_id":13163321}' id="post-12488500">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/broodjekip-1">
+              <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/broodjekip-1">
+                Broodjekip_1
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-24 23:26:19">
+               <a href="https://itch.io/post/12488500">
+                7 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                I may or may not be playing this game the night before an exam at 1:30 am but it's worth it.
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12481860,"user_id":13156846}' id="post-12481860">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/bren-1270">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/bren-1270">
+               bren_1270
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-24 04:47:43">
+              <a href="https://itch.io/post/12481860">
+               8 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i think this is my favorite game i have ever played. the art and sound design were perfect. this song gave me hope when i felt down. the little nuances that the characters had kept me guessing. this game made me cry more times than i care to admit. thank you so much for this beautiful game! &lt;3
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12434584,"user_id":10567636}' id="post-12434584">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/j4gw33d">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/j4gw33d">
+               j4gw33d
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-17 04:25:17">
+              <a href="https://itch.io/post/12434584">
+               15 days ago
+              </a>
+             </span>
+             <span class="edit_message">
+              (1 edit)
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               oh no... I played the whole game thinking the sound design was really quirky when it was just bugged... i didn't realize until I finished and scrolled down to read comments bc that fixed it for some reason??? oh my gosh!! I guess it just goes to show how much I enjoyed this game to think that the choppy music and sounds were just apart of it! But now I have to replay sooner than I thought because the music is so NICE!!!! This game was amazing, I really really loved it. Amazing job, thank you so much.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12433772,"user_id":9038830}' id="post-12433772">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/arcturvs">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzEzODE3MDc3LnBuZw==/25x25%23/z0V24O.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/arcturvs">
+               neptune
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-17 01:26:35">
+              <a href="https://itch.io/post/12433772">
+               15 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               haven't finished the game yet but just wanted to say that i went to the seattle museum of pop culture recently and they had an indie game exhibit and this game was on display! you probably already know this but just wanted to say congrats, thats such a huge accomplishment oh my god. i recognized it since i started the game a few months ago and i was so excited to see it being displayed so it can finally get the recognition it deserves.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12418003,"user_id":13074944}' id="post-12418003">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/blobblynotrick">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/blobblynotrick">
+               blobblynotrick
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-15 02:04:26">
+              <a href="https://itch.io/post/12418003">
+               17 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               I had an absolute blast playing this! I maybe didn't have to do it instead of sleeping the night before two tests. But I had a blast nonetheless! This game is now an important part of who I am as a person. There's so many dialogue options too! I might just replay the game so I can see them all X3 lol i did play through twice cause I got confused the first time and went to heaven all alone like an idiot ^ -^    I would. I would like to pet Lucifur. I think that would be nice.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12412454,"user_id":12912749}' id="post-12412454">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/kaitokoi">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMjY2NTkwLmpwZw==/25x25%23/voANPN.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/kaitokoi">
+               kaito.koi
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-14 04:47:29">
+              <a href="https://itch.io/post/12412454">
+               18 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               yeah ok excuse me whilst i go sob in the corner; i loved this so, SO much.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12407756,"user_id":11823466}' id="post-12407756">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/meperson">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/meperson">
+               MePerson
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-13 13:29:46">
+              <a href="https://itch.io/post/12407756">
+               19 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Peak fiction
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12394757,"user_id":13046255}' id="post-12394757">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/floyder">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMjM0MzU5LmpwZw==/25x25%23/e9ydmv.jpg)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/floyder">
+               floyder
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-11 18:28:11">
+              <a href="https://itch.io/post/12394757">
+               21 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               this game is sooooo good omg almost cryed. they all are so silly i love them
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12384638,"user_id":12992402}' id="post-12384638">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shoresylikesburritos">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shoresylikesburritos">
+               shoresylikesburritos
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-10 16:05:48">
+              <a href="https://itch.io/post/12384638">
+               22 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+3)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               hehe cat pun
+              </p>
+              <p>
+               props on the game btw almost
+               <strong>
+                sobbed
+               </strong>
+              </p>
+              <p>
+               natalie is all time favorite
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12374971,"user_id":6454326}' id="post-12374971">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/just-asomeone">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE3NTE5MTE2LnBuZw==/25x25%23/H9aK5e.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/just-asomeone">
+               Just-aSomeone
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-09 14:06:57">
+              <a href="https://itch.io/post/12374971">
+               23 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+3)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Oh man, I had so much fun playing this game. Thank you so much for creating it!
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12353561,"user_id":10465124}' id="post-12353561">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/rainestormlol">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/rainestormlol">
+               rainestormlol
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-07 02:29:18">
+              <a href="https://itch.io/post/12353561">
+               25 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               this game is genuinely incredible. The characters, the backgrounds, the storylines, the art, the sound, its honestly one of the best games I've ever played. I will forever have a special place in my heart for this breathtaking game.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12347761,"user_id":6359546}' id="post-12347761">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/yeeson">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/yeeson">
+               yeeson
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-06 10:41:07">
+              <a href="https://itch.io/post/12347761">
+               26 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               beautiful
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12339653,"user_id":10791348}' id="post-12339653">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/teams22">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/teams22">
+               teams22
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-05 14:28:52">
+              <a href="https://itch.io/post/12339653">
+               27 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               I SAVED EVERYONE YAAAAAAAAAAAAAAAAAAAy
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12339561,"user_id":10791348}' id="post-12339561">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/teams22">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/teams22">
+               teams22
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-05 14:17:38">
+              <a href="https://itch.io/post/12339561">
+               27 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               how to have uhh natalie ???
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12339498,"user_id":10791348}' id="post-12339498">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/teams22">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/teams22">
+               teams22
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-05 14:05:44">
+              <a href="https://itch.io/post/12339498">
+               27 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               oh yeaa only need natalie to save
+               <strong>
+                :))
+               </strong>
+               at least i get
+               <em>
+                good
+               </em>
+               ending
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12339295,"user_id":10791348}' id="post-12339295">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/teams22">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/teams22">
+               teams22
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-05 13:33:08">
+              <a href="https://itch.io/post/12339295">
+               27 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               where is
+               <strong>
+                orange soda
+               </strong>
+               for oliver?? someone...
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12338497,"user_id":10791348}' id="post-12338497">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/teams22">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/teams22">
+               teams22
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-05 11:06:33">
+              <a href="https://itch.io/post/12338497">
+               27 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               how to save uhh oliver??
+               <em>
+                idk how
+               </em>
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12325308,"user_id":12977298}' id="post-12325308">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 23:02:45">
+              <a href="https://itch.io/post/12325308">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i was going to *goos* a comment but i saw one that i posted "in a few seconds"
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12325289,"user_id":12977298}' id="post-12325289">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 23:00:26">
+              <a href="https://itch.io/post/12325289">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i hate everybody so i turned off the piano while sean was playing it
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12324959,"user_id":12977298}' id="post-12324959">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 22:29:52">
+              <a href="https://itch.io/post/12324959">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i am goo
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12324957,"user_id":12977298}' id="post-12324957">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 22:29:40">
+              <a href="https://itch.io/post/12324957">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i did not...
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12324950,"user_id":12977298}' id="post-12324950">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 22:29:27">
+              <a href="https://itch.io/post/12324950">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i changed my pfp
+              </p>
+              <p>
+               <br/>
+              </p>
+              <p>
+               <br/>
+               (;
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12324885,"user_id":12977298}' id="post-12324885">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/shygoomy">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzIwMTI1MDU5LnBuZw==/25x25%23/ZLS9wE.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/shygoomy">
+               Goomy
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 22:21:47">
+              <a href="https://itch.io/post/12324885">
+               28 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               fly me to the meow!
+              </p>
+              <p>
+               in other words: meow me....
+               <span>
+               </span>
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"id":12316581,"user_id":12497583}' id="post-12316581">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/biornicles">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/biornicles">
+               biornicles
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-03 04:56:38">
+              <a href="https://itch.io/post/12316581">
+               29 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               i think this game has emotionally changed me forever.
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"id":12316679,"user_id":12965664}' id="post-12316679">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/saltwwwwwater">
+              <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/saltwwwwwater">
+                saltwwwwwater
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-03 05:15:57">
+               <a href="https://itch.io/post/12316679">
+                29 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+               <span class="upvotes">
+                (+1)
+               </span>
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                ME TOO LIKE ACTUAALY
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column has_replies" data-post='{"id":12314873,"user_id":12965664}' id="post-12314873">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/saltwwwwwater">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-blue.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/saltwwwwwater">
+               saltwwwwwater
+              </a>
+             </span>
+             <span class="post_date" title="2025-03-02 23:35:38">
+              <a href="https://itch.io/post/12314873">
+               29 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               vro..... i love this game sm...
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post_replies top_level_replies">
+           <div class="community_post has_vote_column is_reply" data-post='{"id":12315206,"user_id":12160102}' id="post-12315206">
+            <div class="post_grid">
+             <div class="post_votes">
+              <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+               <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 18 12 6 22 18">
+                </polygon>
+               </svg>
+              </a>
+              <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+               <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+                <polygon points="2 6 12 18 22 6">
+                </polygon>
+               </svg>
+              </a>
+             </div>
+             <a class="avatar_container" href="https://itch.io/profile/duckboi-12">
+              <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+              </div>
+             </a>
+             <div class="post_header">
+              <span class="post_author">
+               <a href="https://itch.io/profile/duckboi-12">
+                Duckboi 12
+               </a>
+              </span>
+              <span class="post_date" title="2025-03-03 00:33:38">
+               <a href="https://itch.io/post/12315206">
+                29 days ago
+               </a>
+              </span>
+              <span class="vote_counts">
+               <span class="upvotes">
+                (+1)
+               </span>
+              </span>
+             </div>
+             <div class="post_content">
+              <div class="post_body user_formatted" dir="auto">
+               <p>
+                same
+               </p>
+              </div>
+              <div class="post_footer">
+               <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+                Reply
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12293300,"user_id":12160102}' id="post-12293300">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/duckboi-12">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/duckboi-12">
+               Duckboi 12
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-28 22:54:48">
+              <a href="https://itch.io/post/12293300">
+               31 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               oh my God I'm in heaven guys can we ship Oliver and Sean likeeee how he know he has a butt tatto
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12255269,"user_id":12775531}' id="post-12255269">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/viantrx">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-cyan.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/viantrx">
+               viantrx
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-26 03:31:03">
+              <a href="https://itch.io/post/12255269">
+               34 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               IM CRYING THIS GAME IS SO GOOD OLIVER I LOVE YOU
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12229172,"user_id":12888020}' id="post-12229172">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/biel-polypus">
+             <div class="post_avatar" style="background-image: url(/static/images/frog.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/biel-polypus">
+               biel_polypus
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-24 20:20:41">
+              <a href="https://itch.io/post/12229172">
+               35 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               great experience. it will take me at least a week to digest this. muito obrigado pela experiencia
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12210539,"user_id":12296867}' id="post-12210539">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/o-grande-v">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-red.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/o-grande-v">
+               O_grande_v
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-24 01:15:05">
+              <a href="https://itch.io/post/12210539">
+               36 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               GREAT GAME
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12175732,"user_id":8592238}' id="post-12175732">
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/yemideez">
+             <div class="post_avatar" style="background-image: url(/static/images/frog-gold.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/yemideez">
+               yemideez
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-22 03:21:00">
+              <a href="https://itch.io/post/12175732">
+               38 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+2)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               BEST GAME ON ITCH EVERRRR I GO BACK TO THIS GAME EVERY YEARR !!!!! LOVE !!! &lt;
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="community_post has_vote_column" data-post='{"id":12099392,"user_id":11713801}' id="post-12099392">
+           <div class="post_anchor" id="last-post">
+           </div>
+           <div class="post_grid">
+            <div class="post_votes">
+             <a class="vote_up_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote up">
+              <svg aria-hidden="" class="svgicon icon_vote_up" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 18 12 6 22 18">
+               </polygon>
+              </svg>
+             </a>
+             <a class="vote_down_btn vote_btn" data-register_action="community_vote" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory" title="Vote down">
+              <svg aria-hidden="" class="svgicon icon_vote_down" height="20" role="img" version="1.1" viewbox="0 0 24 24" width="20">
+               <polygon points="2 6 12 18 22 6">
+               </polygon>
+              </svg>
+             </a>
+            </div>
+            <a class="avatar_container" href="https://itch.io/profile/caitlyn-powell">
+             <div class="post_avatar" style="background-image: url(https://img.itch.zone/aW1nLzE4MDQ2MDExLnBuZw==/25x25%23/%2FcB3Gm.png)">
+             </div>
+            </a>
+            <div class="post_header">
+             <span class="post_author">
+              <a href="https://itch.io/profile/caitlyn-powell">
+               Caitlyn Powell
+              </a>
+             </span>
+             <span class="post_date" title="2025-02-13 15:16:25">
+              <a href="https://itch.io/post/12099392">
+               47 days ago
+              </a>
+             </span>
+             <span class="vote_counts">
+              <span class="upvotes">
+               (+1)
+              </span>
+             </span>
+            </div>
+            <div class="post_content">
+             <div class="post_body user_formatted" dir="auto">
+              <p>
+               Awesome. Very solid. Guessing that the library passkey (1234) on the first try was a highlight - went and loaded the previous save to make sure I wasn't being pranked.... I'm just a genius like that ig.
+              </p>
+              <p>
+               10/10  but wish I coulda brought the 'kitty' to heaven too (and chatted to Oliver more)
+              </p>
+             </div>
+             <div class="post_footer">
+              <a class="post_action reply_btn" data-register_action="community_reply" href="https://itch.io/login?intent=community&amp;return_to=https%3A%2F%2Fnivrad00.itch.io%2Fpurrgatory">
+               Reply
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <script id="vote_counts_tpl" type="text/template">
+           <% if (up_score > 0) { %><span class="upvotes">(+{{up_score}})</span><% } %><% if (down_score > 0) { %><span class="downvotes">(-{{down_score}})</span><% } %>
+          </script>
+         </div>
+         <div class="topic_pager bottom_pager">
+          <span class="page_label">
+           Viewing most recent comments
+           <nobr>
+            <span>
+             1
+            </span>
+            to
+            <span>
+             40
+            </span>
+            of 716
+           </nobr>
+          </span>
+          ·
+          <a class="page_link" href="https://nivrad00.itch.io/purrgatory/comments?before=677">
+           Next page
+          </a>
+          ·
+          <a class="page_link" href="https://nivrad00.itch.io/purrgatory/comments?after=0">
+           Last page
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="right_col column">
+       <div class="video_embed">
+        <div class="video_embed_widget base_widget" id="video_embed_2367284" style="padding-bottom: 56.25%; position: relative;">
+         <iframe allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/joc2Iu4fsRc" style="position: absolute; width: 100%; height: 100%; left: 0; right: 0">
+         </iframe>
+        </div>
+       </div>
+       <div class="screenshot_list">
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYxLmdpZg==/original/QUjpcV.gif" target="_blank">
+         <img class="screenshot" data-screenshot_id="6516561" src="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYxLmdpZg==/347x500/oMU7rP.gif" srcset="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYxLmdpZg==/347x500/oMU7rP.gif 1x, https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYxLmdpZg==/794x1000/TSSkHW.gif 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYzLnBuZw==/original/ufYJj0.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="6516563" src="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYzLnBuZw==/347x500/45YXtX.png" srcset="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYzLnBuZw==/347x500/45YXtX.png 1x, https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NTYzLnBuZw==/794x1000/hK8eBU.png 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTcyODQ5LmdpZg==/original/CB3PXC.gif" target="_blank">
+         <img class="screenshot" data-screenshot_id="6572849" src="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTcyODQ5LmdpZg==/347x500/i2VyHc.gif" srcset="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTcyODQ5LmdpZg==/347x500/i2VyHc.gif 1x, https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTcyODQ5LmdpZg==/794x1000/oyl5KF.gif 2x"/>
+        </a>
+        <a data-image_lightbox="true" href="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NjIyLnBuZw==/original/0Ja9hP.png" target="_blank">
+         <img class="screenshot" data-screenshot_id="6516622" src="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NjIyLnBuZw==/347x500/MvsDyB.png" srcset="https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NjIyLnBuZw==/347x500/MvsDyB.png 1x, https://img.itch.zone/aW1hZ2UvMTExNjM1MC82NTE2NjIyLnBuZw==/794x1000/oE6b22.png 2x"/>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="footer" id="view_game_footer">
+     <a class="icon_logo" href="https://itch.io/">
+      <svg aria-hidden="" class="svgicon icon_itchio_new" height="17" role="img" version="1.1" viewbox="0 0 262.728 235.452" width="20">
+       <path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z">
+       </path>
+      </svg>
+     </a>
+     <a href="https://itch.io/">
+      itch.io
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a href="https://nivrad00.itch.io">
+      View all by Niv 🦌
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a class="report_game_btn" data-lightbox_url="https://nivrad00.itch.io/purrgatory/report" href="javascript:void(0);">
+      Report
+     </a>
+     <span class="dot">
+      ·
+     </span>
+     <a class="embed_game_btn" data-lightbox_url="https://nivrad00.itch.io/purrgatory/embed" href="javascript:void(0);">
+      Embed
+     </a>
+     <div class="breadcrumbs">
+      <a href="https://itch.io/games">
+       Games
+      </a>
+      ›
+      <a href="https://itch.io/games/genre-visual-novel">
+       Visual Novel
+      </a>
+      ›
+      <a href="https://itch.io/games/free">
+       Free
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   I.setup_layout()
+  </script>
+  <script id="loading_lightbox_tpl" type="text/template">
+   <div aria-live="polite" class="lightbox loading_lightbox"><div class="loader_outer"><div class="loader_label">Loading</div><div class="loader_bar"><div class="loader_bar_slider"></div></div></div></div>
+  </script>
+  <script type="text/javascript">
+   init_HtmlEmbed('#html_embed_7192871', {"width":1280,"height":720,"start_maximized":false});new I.CommunityViewTopic('#community_topic_posts_8787336', {"report_url":"https:\/\/itch.io\/post\/:post_id\/report"});init_ViewHtmlGame('#view_html_game_1398528', {"game":{"min_price":0,"id":1116350,"slug":"purrgatory","type_name":"html","type":5,"play_url":"https:\/\/nivrad00.itch.io\/purrgatory\/rp\/eyJybiI6ODUxNDEsImlkIjoxMTE2MzUwLCJtIjoxNzQzNTMyNzU4LCJlIjoxNzQzNTMyODE4fQ%3d%3d%2eLKvPYjllrQETU%2fSABdXUzUTPbDU%3d","actual_price":0,"play_after":90,"hit_url":"https:\/\/nivrad00.itch.io\/purrgatory\/rh\/eyJpZCI6MTExNjM1MCwiZSI6MTc0MzUzMjY4M30%3d%2epMKEdI3%2fL%2blmXKjJulM0GaqWaXw%3d"},"generate_download_url":"https:\/\/nivrad00.itch.io\/purrgatory\/download_url"});
+I.setup_page();
+  </script>
+ </body>
+</html>

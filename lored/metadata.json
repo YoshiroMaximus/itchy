@@ -1,0 +1,62 @@
+{
+    "game_id": 461027,
+    "title": "LORED",
+    "url": "https://drillur.itch.io/lored",
+    "cover_url": "https://img.itch.zone/aW1nLzE5OTIzODgyLnBuZw==/original/CsEujY.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvNDYxMDI3LzE5ODQyNTg5LnBuZw==/original/gaImXk.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxMDI3LzE5ODQyNTg3LnBuZw==/original/8OduMX.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxMDI3LzE5ODQyNTg4LnBuZw==/original/aVcJMG.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxMDI3LzE5ODQyNTkwLnBuZw==/original/DWu9L5.png",
+        "https://img.itch.zone/aW1hZ2UvNDYxMDI3LzE5ODQyNTg2LnBuZw==/original/ZmYAzw.png"
+    ],
+    "description": "An idle game about collecting cancer with quirky stickfigures!",
+    "updated_at": "2025-03-24T22:45:00",
+    "author": "Drillur",
+    "author_url": "https://drillur.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "Linux"
+        ],
+        "genre": {
+            "Simulation": "https://itch.io/games/genre-simulation"
+        },
+        "tools": {
+            "Godot": "https://itch.io/games/made-with-godot",
+            "GIMP": "https://itch.io/games/made-with-gimp",
+            "Krita": "https://itch.io/games/made-with-krita"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Automation": "https://itch.io/games/tag-automation",
+            "Godot": "https://itch.io/games/tag-godot",
+            "Idle": "https://itch.io/games/tag-idle",
+            "Incremental": "https://itch.io/games/tag-incremental",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Sprites": "https://itch.io/games/tag-sprites",
+            "upgrades": "https://itch.io/games/tag-upgrades"
+        },
+        "length": "About an hour",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Mouse": "https://itch.io/games/input-mouse",
+            "Touchscreen": "https://itch.io/games/input-touchscreen"
+        },
+        "links": {
+            "Steam": "https://store.steampowered.com/app/3418150/LORED/",
+            "Discord": "https://discord.gg/xJeBZxt",
+            "Twitter/X": "https://x.com/drillur"
+        }
+    },
+    "rating": {
+        "average": 4.4,
+        "votes": 183
+    },
+    "errors": [],
+    "external_downloads": []
+}

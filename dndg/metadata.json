@@ -1,0 +1,64 @@
+{
+    "game_id": 1600840,
+    "title": "Dungeons & Degenerate Gamblers",
+    "url": "https://purplemosscollectors.itch.io/dndg",
+    "cover_url": "https://img.itch.zone/aW1nLzE2Mjc3NjU5LnBuZw==/original/iMrhNk.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwMy5qcGc=/original/aCXG3L.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwMC5qcGc=/original/8my%2B0%2F.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwMS5qcGc=/original/Y3q%2BWN.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwNS5qcGc=/original/%2F9m%2Fbz.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwNC5qcGc=/original/k%2BJiug.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTYwMDg0MC8xOTEwMDgwMi5qcGc=/original/%2FSccvI.jpg"
+    ],
+    "description": "You've never played blackjack with cards like these!",
+    "author": "Purple Moss Collectors",
+    "author_url": "https://purplemosscollectors.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5"
+        ],
+        "genre": {
+            "Card Game": "https://itch.io/games/tag-card-game"
+        },
+        "tools": {
+            "Aseprite": "https://itch.io/games/made-with-aseprite",
+            "Godot": "https://itch.io/games/made-with-godot"
+        },
+        "tags": {
+            "blackjack": "https://itch.io/games/tag-blackjack",
+            "Deck Building": "https://itch.io/games/tag-deck-building",
+            "gambling": "https://itch.io/games/tag-gambling",
+            "Godot": "https://itch.io/games/tag-godot",
+            "made-in-new-zealand": "https://itch.io/games/tag-made-in-new-zealand",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Roguelike": "https://itch.io/games/tag-roguelike",
+            "Roguelite": "https://itch.io/games/tag-roguelite",
+            "satire": "https://itch.io/games/tag-satire",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer"
+        },
+        "length": "About a half-hour",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Mouse": "https://itch.io/games/input-mouse"
+        },
+        "accessibility": {
+            "One button": "https://itch.io/games/accessibility-one-button"
+        },
+        "links": {
+            "Steam": "https://store.steampowered.com/app/2400510/Dungeons__Degenerate_Gamblers/",
+            "Twitter/X": "https://twitter.com/mosscollectors",
+            "YouTube": "https://www.youtube.com/watch?v=oJAlbRT8SaI",
+            "Community": "https://discord.gg/WDpD45xJTf"
+        }
+    },
+    "rating": {
+        "average": 4.8,
+        "votes": 743
+    },
+    "errors": [],
+    "external_downloads": []
+}

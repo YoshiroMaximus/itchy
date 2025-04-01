@@ -1,0 +1,45 @@
+{
+    "game_id": 395249,
+    "title": "make sure it's closed",
+    "url": "https://corpsepile.itch.io/make-sure-its-closed",
+    "cover_url": "https://img.itch.zone/aW1nLzE5Njc3MDcucG5n/original/LCV4CG.png",
+    "screenshots": [
+        "https://img.itch.zone/aW1nLzE5Njc3MDcucG5n/original/LCV4CG.png"
+    ],
+    "description": "A minute-long horror game about a childhood fear of mine.",
+    "author": "corpsepile",
+    "author_url": "https://corpsepile.itch.io",
+    "extra": {
+        "status": "Released",
+        "platforms": [
+            "HTML5",
+            "Windows",
+            "macOS"
+        ],
+        "genre": {
+            "Simulation": "https://itch.io/games/genre-simulation"
+        },
+        "tools": {
+            "Unity": "https://itch.io/games/made-with-unity"
+        },
+        "tags": {
+            "Creepy": "https://itch.io/games/tag-creepy",
+            "Cute": "https://itch.io/games/tag-cute",
+            "Horror": "https://itch.io/games/tag-horror",
+            "Low-poly": "https://itch.io/games/tag-low-poly",
+            "memoir": "https://itch.io/games/tag-memoir",
+            "Minimalist": "https://itch.io/games/tag-minimalist",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Short": "https://itch.io/games/tag-short",
+            "Singleplayer": "https://itch.io/games/tag-singleplayer",
+            "Walking simulator": "https://itch.io/games/tag-walking-simulator"
+        },
+        "length": "A few seconds"
+    },
+    "rating": {
+        "average": 4.3,
+        "votes": 1568
+    },
+    "errors": [],
+    "external_downloads": []
+}

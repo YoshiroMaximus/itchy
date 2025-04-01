@@ -1,0 +1,69 @@
+{
+    "game_id": 1875085,
+    "title": "NIMRODS - Demo",
+    "url": "https://fiveamp.itch.io/nimrods",
+    "cover_url": "https://img.itch.zone/aW1nLzEyMjExOTk2LmdpZg==/original/2nYhIu.gif",
+    "screenshots": [
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc2OS5qcGc=/original/bxqZiu.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3MC5qcGc=/original/ZVKmEm.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3MS5qcGc=/original/WilWyt.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3Ni5qcGc=/original/hUOnRw.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3Mi5qcGc=/original/148CPV.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3NC5qcGc=/original/xn9Kmw.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3My5qcGc=/original/tDEu8c.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3OS5qcGc=/original/tXMusW.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3NS5qcGc=/original/KosmiU.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3OC5qcGc=/original/b3Qlmm.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4MS5qcGc=/original/pcKLVu.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc3Ny5qcGc=/original/to62fd.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4Mi5qcGc=/original/BvBd7y.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4NC5qcGc=/original/eBWXD4.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4MC5qcGc=/original/c5A5cZ.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4My5qcGc=/original/DrEh5c.jpg",
+        "https://img.itch.zone/aW1hZ2UvMTg3NTA4NS8xNDg3Nzc4NS5qcGc=/original/xm4ztt.jpg"
+    ],
+    "description": "Slay hordes of aliens in this survival roguelite shooter. As NIMRODS the mission is to Test Weaponry",
+    "author": "Fiveamp",
+    "author_url": "https://fiveamp.itch.io",
+    "extra": {
+        "status": "In development",
+        "platforms": [
+            "HTML5"
+        ],
+        "genre": {
+            "Action": "https://itch.io/games/genre-action"
+        },
+        "tools": {
+            "Unity": "https://itch.io/games/made-with-unity"
+        },
+        "tags": {
+            "2D": "https://itch.io/games/tag-2d",
+            "Bullet Hell": "https://itch.io/games/tag-bullet-hell",
+            "Indie": "https://itch.io/games/tag-indie",
+            "Pixel Art": "https://itch.io/games/tag-pixel-art",
+            "Roguelike": "https://itch.io/games/tag-roguelike",
+            "Roguelite": "https://itch.io/games/tag-roguelite",
+            "Shoot 'Em Up": "https://itch.io/games/tag-shoot-em-up",
+            "Space": "https://itch.io/games/tag-space",
+            "Top down shooter": "https://itch.io/games/tag-top-down-shooter"
+        },
+        "length": "About a half-hour",
+        "languages": {
+            "English": "https://itch.io/games/lang-en"
+        },
+        "inputs": {
+            "Keyboard": "https://itch.io/games/input-keyboard",
+            "Xbox controller": "https://itch.io/games/input-x360",
+            "Playstation controller": "https://itch.io/games/input-playstation"
+        },
+        "links": {
+            "Steam": "https://store.steampowered.com/app/2086430/NIMRODS"
+        }
+    },
+    "rating": {
+        "average": 4.7,
+        "votes": 108
+    },
+    "errors": [],
+    "external_downloads": []
+}
